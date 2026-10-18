@@ -1,0 +1,52 @@
+# {{ issue.title }}
+
+{{ issue.intro }}
+
+**This week:** {{ issue.new_count }} {{ "open" if issue.first_issue else "new" }} · {{ issue.closing_soon|length }} closing within 3 weeks · {{ issue.forecasts|length }} forecasts
+
+{% if issue.closing_soon %}
+## Closing soon
+
+{% for opp in issue.closing_soon %}
+- **{{ opp.deadline|short_date(year) }}** · [{{ opp.title }}]({{ opp.url }}) · {{ opp.agency }}
+{% endfor %}
+
+{% endif %}
+{% if issue.new_groups %}
+## {{ "Open now" if issue.first_issue else "New this week" }}
+
+{% for group, items in issue.new_groups %}
+### {{ group }}
+
+{% for opp in items %}
+**[{{ opp.title }}]({{ opp.url }})**
+{{ meta_line(opp, year) }}
+
+{{ opp.summary }}
+
+{% for line in opp.funding + opp.facts %}
+- {{ line }}
+{% endfor %}
+
+{% endfor %}
+{% endfor %}
+{% endif %}
+{% if issue.forecasts %}
+## Coming soon: forecasts
+
+These are announced but not open yet. Use the time to line up partners and a draft.
+
+{% for opp in issue.forecasts %}
+- **[{{ opp.title }}]({{ opp.url }})** · {{ opp.agency }}{% if opp.program or opp.phase %} · {{ [opp.program, opp.phase]|select|join(" ") }}{% endif %}. {{ opp.summary }}
+{% endfor %}
+
+{% endif %}
+{% if issue.still_open %}
+## Still open
+
+{{ issue.still_open }} more {{ "opportunity is" if issue.still_open == 1 else "opportunities are" }} still accepting applications. See the full list: {{ cfg.SITE_URL }}/open.html
+
+{% endif %}
+---
+
+{{ cfg.NEWSLETTER_NAME }} is put together every Monday from SAM.gov and Grants.gov by the [SAM.gov & SBIR RFP Deep-Parser]({{ cfg.ACTOR_STORE_URL }}), which also reads the attached documents for page limits, formatting rules and submission portals. Always confirm details on the official notice before you apply. Past issues: {{ cfg.SITE_URL }}

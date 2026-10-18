@@ -1,0 +1,150 @@
+"""Decide what goes into this week's issue, using the pipeline's memory in data/state.json."""
+
+from __future__ import annotations
+
+import json
+from dataclasses import dataclass, field
+from datetime import date, timedelta
+from pathlib import Path
+
+from . import config
+from .normalize import Opportunity
+
+GROUP_ORDER = [
+    "Defense",
+    "Science and space",
+    "Health",
+    "Agriculture and environment",
+    "Homeland security and transportation",
+    "Other agencies",
+]
+FORECAST_MAX_AGE_DAYS = 180
+NOTICE_MAX_AGE_DAYS = 45
+
+
+def empty_state() -> dict:
+    return {"seen": {}, "open": {}, "issues": []}
+
+
+def load_state(path: Path | None = None) -> dict:
+    path = path or config.DATA_DIR / "state.json"
+    if not path.exists():
+        return empty_state()
+    state = json.loads(path.read_text(encoding="utf-8"))
+    for key, value in empty_state().items():
+        state.setdefault(key, value)
+    return state
+
+
+def save_state(state: dict, path: Path | None = None) -> None:
+    path = path or config.DATA_DIR / "state.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def still_relevant(opp: Opportunity, today: date) -> bool:
+    if opp.deadline_date:
+        return opp.deadline_date >= today
+    posted = date.fromisoformat(opp.posted) if opp.posted else None
+    if opp.kind == "forecast":
+        return posted is None or (today - posted).days <= FORECAST_MAX_AGE_DAYS
+    if opp.kind == "notice":
+        return posted is None or (today - posted).days <= NOTICE_MAX_AGE_DAYS
+    return True
+
+
+def _deadline_key(opp: Opportunity) -> tuple:
+    return (opp.deadline is None, opp.deadline or "", opp.title)
+
+
+@dataclass
+class Issue:
+    issue_date: date
+    first_issue: bool
+    intro: str
+    counts: str
+    closing_soon: list[Opportunity] = field(default_factory=list)
+    new_groups: list[tuple[str, list[Opportunity]]] = field(default_factory=list)
+    forecasts: list[Opportunity] = field(default_factory=list)
+    still_open: int = 0
+
+    @property
+    def new_count(self) -> int:
+        return sum(len(items) for _, items in self.new_groups)
+
+    @property
+    def title(self) -> str:
+        return f"{config.NEWSLETTER_NAME}: {self.issue_date.strftime('%B')} {self.issue_date.day}, {self.issue_date.year}"
+
+    @property
+    def slug(self) -> str:
+        return self.issue_date.isoformat()
+
+
+def plan_issue(opps: list[Opportunity], state: dict, today: date) -> tuple[Issue, list[Opportunity], dict[str, Opportunity]]:
+    """Returns the issue (without intro text yet), the items that need summaries, and the new open map."""
+    opps = [o for o in opps if still_relevant(o, today)]
+    first_issue = not state["issues"] and not state["seen"]
+    previous_map = {opp_id: Opportunity.from_dict(data) for opp_id, data in state["open"].items()}
+
+    def is_new(opp: Opportunity) -> bool:
+        if opp.id not in state["seen"]:
+            return True
+        before = previous_map.get(opp.id)
+        return bool(before and before.kind == "forecast" and opp.kind == "open")  # a forecast that just opened
+
+    new = [o for o in opps if is_new(o)]
+    new_ids = {o.id for o in new}
+
+    open_map = {opp_id: opp for opp_id, opp in previous_map.items() if still_relevant(opp, today)}
+    for opp in opps:
+        previous = open_map.get(opp.id)
+        if previous and previous.summary and opp.id not in new_ids:
+            opp.summary = previous.summary  # keep last week's AI summary
+        open_map[opp.id] = opp
+
+    horizon = today + timedelta(days=config.CLOSING_SOON_DAYS)
+    closing = sorted(
+        (o for o in open_map.values() if o.kind == "open" and o.deadline_date and today <= o.deadline_date <= horizon),
+        key=_deadline_key,
+    )
+    new_main = [o for o in new if o.kind in ("open", "notice")][: config.MAX_NEW_ITEMS]
+    forecasts = sorted((o for o in new if o.kind == "forecast"), key=lambda o: o.posted or "", reverse=True)
+
+    groups = []
+    for name in GROUP_ORDER:
+        items = sorted((o for o in new_main if o.group == name), key=_deadline_key)
+        if items:
+            groups.append((name, items))
+
+    shown = {o.id for o in closing} | {o.id for o in new_main} | {o.id for o in forecasts}
+    still_open = sum(1 for o in open_map.values() if o.id not in shown and o.kind != "forecast")
+
+    counts = (
+        f"{len(new_main)} new opportunities, {len(closing)} closing within {config.CLOSING_SOON_DAYS} days, "
+        f"{len(forecasts)} new forecasts"
+    )
+    issue = Issue(
+        issue_date=today,
+        first_issue=first_issue,
+        intro="",
+        counts=counts,
+        closing_soon=closing,
+        new_groups=groups,
+        forecasts=forecasts,
+        still_open=still_open,
+    )
+    return issue, new_main + forecasts, open_map
+
+
+def default_intro(issue: Issue) -> str:
+    new_label = "open opportunities" if issue.first_issue else "new opportunities"
+    parts = [f"This week there are {issue.new_count} {new_label}"]
+    if issue.closing_soon:
+        parts.append(f"{len(issue.closing_soon)} closing within three weeks")
+    if issue.forecasts:
+        parts.append(f"{len(issue.forecasts)} forecasts of solicitations still to come")
+    sentence = parts[0] + (", " + ", ".join(parts[1:-1]) if len(parts) > 2 else "")
+    if len(parts) > 1:
+        sentence += f" and {parts[-1]}"
+    return sentence + ". Each entry links to the official notice; check it before you apply."

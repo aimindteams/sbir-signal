@@ -1,0 +1,57 @@
+name: Weekly draft
+
+on:
+  schedule:
+    - cron: "17 11 * * 1"   # Mondays 11:17 UTC (7:17 am New York in summer, 6:17 am in winter)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: sbir-signal
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Build this week's draft
+        id: build
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SUBSTACK_URL: ${{ vars.SUBSTACK_URL }}
+        run: python -m sbir_signal.build
+
+      - name: Save draft and memory
+        if: steps.build.outputs.drafted == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data drafts
+          git commit -m "Draft ${{ steps.build.outputs.date }}"
+          git push
+
+      - name: Open review issue
+        if: steps.build.outputs.drafted == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create sbir-draft --color F2B21B --description "Weekly SBIR Signal draft" 2>/dev/null || true
+          gh issue create \
+            --title "Draft ready: ${{ steps.build.outputs.title }}" \
+            --label sbir-draft \
+            --body-file "drafts/${{ steps.build.outputs.date }}/review.md"

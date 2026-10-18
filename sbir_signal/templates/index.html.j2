@@ -1,0 +1,20 @@
+{% extends "base.html.j2" %}
+{% block content %}
+<section class="hero">
+  <h1>{{ cfg.NEWSLETTER_NAME }}</h1>
+  <p class="lede">{{ cfg.TAGLINE }} Deadlines, page limits, formats and submission portals pulled from the attachments, so you can decide in a minute whether to apply.</p>
+  <p><a class="button big" href="{{ cfg.SUBSTACK_URL }}">Subscribe free</a> <a class="link" href="open.html">See what is open now</a></p>
+</section>
+<section>
+  <h2>Issues</h2>
+  {% if issues %}
+  <ul class="archive">
+    {% for entry in issues %}
+    <li><a href="issues/{{ entry.date }}.html">{{ entry.title }}</a>{% if entry.summary %}<br><span class="muted">{{ entry.summary }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="muted">The first issue is on its way.</p>
+  {% endif %}
+</section>
+{% endblock %}

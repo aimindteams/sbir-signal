@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ cfg.NEWSLETTER_NAME }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ cfg.TAGLINE }}{% endblock %}">
+<link rel="canonical" href="{% block canonical %}{{ cfg.SITE_URL }}/{% endblock %}">
+<link rel="alternate" type="application/rss+xml" title="{{ cfg.NEWSLETTER_NAME }}" href="{{ cfg.SITE_URL }}/feed.xml">
+<link rel="stylesheet" href="{% block root %}{% endblock %}style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead-row">
+    <a class="brand" href="{{ self.root() }}index.html"><span class="mark" aria-hidden="true"></span>{{ cfg.NEWSLETTER_NAME }}</a>
+    <nav>
+      <a href="{{ self.root() }}open.html">Open now</a>
+      <a class="button" href="{{ cfg.SUBSTACK_URL }}">Subscribe free</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{% block content %}{% endblock %}
+</main>
+<footer class="wrap footer">
+  <p>{{ cfg.NEWSLETTER_NAME }} is put together every Monday from SAM.gov and Grants.gov by the
+  <a href="{{ cfg.ACTOR_STORE_URL }}">SAM.gov &amp; SBIR RFP Deep-Parser</a>, which also reads the attached documents.
+  Always confirm details on the official notice before you apply.</p>
+  <p>Published by {{ cfg.PUBLISHER }} · <a href="{{ cfg.SITE_URL }}/feed.xml">RSS</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "base.html.j2" %}
+{% block title %}Open SBIR and STTR opportunities | {{ cfg.NEWSLETTER_NAME }}{% endblock %}
+{% block description %}Every SBIR and STTR opportunity {{ cfg.NEWSLETTER_NAME }} is tracking that is open or forecast, with deadlines, updated weekly.{% endblock %}
+{% block canonical %}{{ cfg.SITE_URL }}/open.html{% endblock %}
+{% block content %}
+<h1>Open SBIR and STTR opportunities</h1>
+<p class="lede">Updated {{ today.strftime('%B') }} {{ today.day }}, {{ today.year }}. Sorted by deadline; forecasts are at the end.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Deadline</th><th>Opportunity</th><th>Agency</th><th>Status</th></tr></thead>
+  <tbody>
+  {% for opp in opps %}
+    <tr>
+      <td class="nowrap">{{ deadline_text(opp, year) }}</td>
+      <td><a href="{{ opp.url }}">{{ opp.title }}</a>{% if opp.funding %}<br><span class="muted">{{ opp.funding|join("; ") }}</span>{% endif %}</td>
+      <td>{{ opp.agency }}</td>
+      <td>{{ opp.kind_label }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}
