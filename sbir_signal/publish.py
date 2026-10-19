@@ -39,6 +39,11 @@ def publish(issue_date: str) -> None:
         raise SystemExit(f"No draft found for {issue_date}")
     meta = json.loads((draft / "meta.json").read_text(encoding="utf-8"))
     target = config.SITE_DIR / "issues"
+    if (target / f"{issue_date}.html").exists():
+        # Never overwrite an issue that is already in the archive (for example a same-day rerun).
+        log.warning("An issue for %s is already published; keeping it and discarding this draft.", issue_date)
+        shutil.rmtree(draft)
+        return
     target.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(draft / "issue.html", target / f"{issue_date}.html")
     shutil.copyfile(draft / "issue.md", target / f"{issue_date}.md")

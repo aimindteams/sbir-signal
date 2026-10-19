@@ -100,7 +100,10 @@ class Issue:
         """One line for Substack's subtitle field."""
         label = "open" if self.first_issue else "new"
         noun = "opportunity" if self.new_count == 1 else "opportunities"
-        parts = [f"{self.new_count} {label} SBIR/STTR {noun}"]
+        if self.new_count:
+            parts = [f"{self.new_count} {label} SBIR/STTR {noun}"]
+        else:
+            parts = ["No new SBIR/STTR opportunities this week"]
         if self.closing_soon:
             parts.append(f"{len(self.closing_soon)} closing within 3 weeks")
         if self.forecasts:
@@ -176,6 +179,13 @@ def plan_issue(opps: list[Opportunity], state: dict, today: date) -> tuple[Issue
 
 
 def default_intro(issue: Issue) -> str:
+    if issue.new_count == 0:
+        lead = "No new SBIR or STTR opportunities appeared this week."
+        if issue.closing_soon:
+            lead += f" {len(issue.closing_soon)} you may be working on close within three weeks."
+        if issue.forecasts:
+            lead += f" {len(issue.forecasts)} new forecasts point to solicitations still to come."
+        return lead + " Each entry links to the official notice; check it before you apply."
     new_label = "open opportunities" if issue.first_issue else "new opportunities"
     parts = [f"This week there are {issue.new_count} {new_label}"]
     if issue.closing_soon:

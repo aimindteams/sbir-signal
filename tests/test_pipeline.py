@@ -181,7 +181,29 @@ def test_build_and_publish_end_to_end(items, sandbox):
     assert (config.SITE_DIR / "open.html").exists() and (config.SITE_DIR / "feed.xml").exists()
     assert not draft.exists()
 
-    # A second run with the same data has nothing new; it still drafts because deadlines are close.
+    # Same-day rerun: skipped, so today's archive page can never be replaced.
+    build.main(["--input", str(FIXTURE), "--date", TODAY.isoformat(), "--no-ai"])
+    assert not draft.exists()
+    # Three days later with nothing new: skipped too.
+    build.main(["--input", str(FIXTURE), "--date", "2026-10-22", "--no-ai"])
+    assert not (config.DRAFTS_DIR / "2026-10-22").exists()
+
+    # A week later with nothing new it still drafts, because deadlines are close.
     assert build.main(["--input", str(FIXTURE), "--date", "2026-10-26", "--no-ai"]) == 0
-    second = (config.DRAFTS_DIR / "2026-10-26" / "issue.md").read_text(encoding="utf-8")
+    second_dir = config.DRAFTS_DIR / "2026-10-26"
+    second = (second_dir / "issue.md").read_text(encoding="utf-8")
     assert "## New this week" not in second and "## Closing soon" in second
+    review = (second_dir / "review.md").read_text(encoding="utf-8")
+    assert "```text\nNo new SBIR/STTR opportunities this week, 2 closing within 3 weeks\n```" in review
+    assert "No new SBIR or STTR opportunities appeared this week." in second
+
+
+def test_publish_never_overwrites_an_archived_issue(items, sandbox):
+    build.main(["--input", str(FIXTURE), "--date", TODAY.isoformat(), "--no-ai"])
+    publish.main(["--date", TODAY.isoformat()])
+    page = config.SITE_DIR / "issues" / f"{TODAY.isoformat()}.html"
+    original = page.read_text(encoding="utf-8")
+    build.main(["--input", str(FIXTURE), "--date", TODAY.isoformat(), "--no-ai", "--force"])
+    publish.main(["--date", TODAY.isoformat()])
+    assert page.read_text(encoding="utf-8") == original
+    assert not (config.DRAFTS_DIR / TODAY.isoformat()).exists()

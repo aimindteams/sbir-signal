@@ -3,7 +3,12 @@ name: Weekly draft
 on:
   schedule:
     - cron: "17 11 * * 1"   # Mondays 11:17 UTC (7:17 am New York in summer, 6:17 am in winter)
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Draft even if an issue already went out this week"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,7 +39,7 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SUBSTACK_URL: ${{ vars.SUBSTACK_URL }}
-        run: python -m sbir_signal.build
+        run: python -m sbir_signal.build ${{ inputs.force && '--force' || '' }}
 
       - name: Save draft and memory
         if: steps.build.outputs.drafted == 'true'

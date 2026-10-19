@@ -59,19 +59,25 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--input", type=str, help="Read Actor items from this JSON file instead of running the Actor")
     parser.add_argument("--date", type=str, help="Issue date (YYYY-MM-DD); defaults to today in New York")
     parser.add_argument("--no-ai", action="store_true", help="Skip Gemini even if a key is set")
+    parser.add_argument("--force", action="store_true", help="Draft even if an issue already went out this week")
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
     today = date.fromisoformat(args.date) if args.date else datetime.now(config.TIMEZONE).date()
-    items = load_file(Path(args.input)) if args.input else run_actor()
-
     state = load_state()
+    issue_dates = sorted(date.fromisoformat(e["date"]) for e in state["issues"])
+    if not args.force and (today in issue_dates or (config.DRAFTS_DIR / today.isoformat()).exists()):
+        return _skip(f"An issue or draft for {today.isoformat()} already exists. Nothing to do.")
+
+    items = load_file(Path(args.input)) if args.input else run_actor()
     opps = normalize(items, today)
     issue, to_summarize, open_map = plan_issue(opps, state, today)
-    if issue.new_count == 0 and not issue.closing_soon and not issue.forecasts:
-        log.info("Nothing new and nothing closing soon; no draft this week.")
-        _output(drafted="false")
-        return 0
+    nothing_new = issue.new_count == 0 and not issue.forecasts
+    if nothing_new and not issue.closing_soon:
+        return _skip("Nothing new and nothing closing soon; no draft this week.")
+    days_since_last = (today - issue_dates[-1]).days if issue_dates else None
+    if nothing_new and not args.force and days_since_last is not None and days_since_last < 6:
+        return _skip(f"Nothing new since the issue {days_since_last} day(s) ago; no draft.")
 
     if args.no_ai:
         intro, ai_status = None, "AI summaries: skipped (--no-ai)."
@@ -103,8 +109,24 @@ def main(argv: list[str] | None = None) -> int:
     save_state(state)
 
     log.info("Draft written to %s (%d new, %d closing soon, %d forecasts)", out_dir, issue.new_count, len(issue.closing_soon), len(issue.forecasts))
+    _summary(f"Draft ready: **{issue.title}** ({issue.subtitle}).\n\n{ai_status}")
     _output(drafted="true", date=issue.slug, title=issue.title)
     return 0
+
+
+def _skip(reason: str) -> int:
+    log.info(reason)
+    _summary(f"No draft this run. {reason}")
+    _output(drafted="false")
+    return 0
+
+
+def _summary(text: str) -> None:
+    """Show a line on the workflow run page (GitHub's job summary)."""
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if path:
+        with open(path, "a", encoding="utf-8") as handle:
+            handle.write(text + "\n")
 
 
 def _output(**values: str) -> None:
