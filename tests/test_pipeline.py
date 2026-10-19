@@ -109,14 +109,51 @@ def test_gemini_result_is_checked(items, monkeypatch):
     monkeypatch.setattr(
         summarize,
         "_call_gemini",
-        lambda prompt: {
-            "intro": "This week brings 9 new opportunities " + EM_DASH + " two close soon.",
-            "summaries": {target.id: "USDA funds Phase II research for past Phase I winners in food and agriculture."},
-        },
+        lambda prompt: (
+            {
+                "intro": "This week brings 9 new opportunities " + EM_DASH + " two close soon.",
+                "summaries": {target.id: "USDA funds Phase II research for past Phase I winners in food and agriculture."},
+            },
+            "test-model",
+        ),
     )
-    intro = summarize.summarize(opps, "9 new opportunities, 2 closing within 21 days, 4 new forecasts")
+    intro, status = summarize.summarize(opps, "9 new opportunities, 2 closing within 21 days, 4 new forecasts")
     assert target.summary.startswith("USDA funds Phase II")
     assert intro and EM_DASH not in intro
+    assert status.startswith("AI summaries: on (test-model)")
+
+
+def test_gemini_falls_back_when_a_model_is_retired(monkeypatch):
+    import httpx
+
+    calls = []
+
+    def fake_post(url, **kwargs):
+        calls.append(url)
+        request = httpx.Request("POST", url)
+        if "gemini-3.8-flash" in url:
+            return httpx.Response(404, json={"error": {"message": "not found"}}, request=request)
+        payload = {"candidates": [{"content": {"parts": [{"text": '```json\n{"intro": "x", "summaries": {}}\n```'}]}}]}
+        return httpx.Response(200, json=payload, request=request)
+
+    monkeypatch.setattr(config, "GEMINI_API_KEY", "test-key")
+    monkeypatch.setattr(config, "GEMINI_MODEL", "gemini-3.8-flash")
+    monkeypatch.setattr(summarize.httpx, "post", fake_post)
+    result, model = summarize._call_gemini("prompt")
+    assert model == "gemini-3.6-flash" and result["intro"] == "x"
+    assert len(calls) == 2
+
+
+def test_gemini_bad_key_stops_quickly(monkeypatch):
+    import httpx
+
+    def fake_post(url, **kwargs):
+        return httpx.Response(400, json={"error": {"message": "API key not valid."}}, request=httpx.Request("POST", url))
+
+    monkeypatch.setattr(config, "GEMINI_API_KEY", "bad")
+    monkeypatch.setattr(summarize.httpx, "post", fake_post)
+    with pytest.raises(RuntimeError, match="API key not valid"):
+        summarize._call_gemini("prompt")
 
 
 def test_build_and_publish_end_to_end(items, sandbox):

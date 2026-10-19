@@ -39,6 +39,7 @@ Opportunities:
 """
 
 NUMBER_RE = re.compile(r"\d[\d,.]*")
+FALLBACK_MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-flash-latest"]
 
 
 def _compact(opp: Opportunity) -> dict:
@@ -65,39 +66,79 @@ def _grounded(summary: str, opp: Opportunity) -> bool:
     return _numbers(summary) <= _numbers(source)
 
 
-def _call_gemini(prompt: str) -> dict:
-    url = GEMINI_URL.format(model=config.GEMINI_MODEL)
+def _models() -> list[str]:
+    """The configured model first, then current free-tier models in case one is retired."""
+    return list(dict.fromkeys([config.GEMINI_MODEL, *FALLBACK_MODELS]))
+
+
+def _parse(text: str) -> dict:
+    text = text.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)
+    return json.loads(text)
+
+
+def _error_message(response: httpx.Response) -> str:
+    try:
+        return response.json().get("error", {}).get("message", "")[:200]
+    except ValueError:
+        return response.text[:200]
+
+
+def _call_gemini(prompt: str) -> tuple[dict, str]:
+    """Returns (parsed JSON, model used). Raises RuntimeError with a readable reason."""
     body = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
     }
-    last_error: Exception | None = None
-    for attempt in range(3):
-        try:
-            response = httpx.post(url, json=body, headers={"x-goog-api-key": config.GEMINI_API_KEY}, timeout=90)
-            if response.status_code in (429, 500, 503):
-                raise httpx.HTTPStatusError("retryable", request=response.request, response=response)
-            response.raise_for_status()
-            text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
-            return json.loads(text)
-        except (httpx.HTTPError, KeyError, IndexError, json.JSONDecodeError) as exc:
-            last_error = exc
-            time.sleep(5 * (attempt + 1))
-    raise RuntimeError(f"Gemini call failed: {last_error}")
+    reasons = []
+    for model in _models():
+        for attempt in range(3):
+            try:
+                response = httpx.post(
+                    GEMINI_URL.format(model=model), json=body,
+                    headers={"x-goog-api-key": config.GEMINI_API_KEY}, timeout=120,
+                )
+            except httpx.HTTPError as exc:
+                reasons.append(f"{model}: network error {exc.__class__.__name__}")
+                time.sleep(5 * (attempt + 1))
+                continue
+            if response.status_code == 404:
+                reasons.append(f"{model}: model not available")
+                break  # try the next model
+            if response.status_code in (400, 401, 403):
+                raise RuntimeError(f"Gemini rejected the key or request ({response.status_code}): {_error_message(response)}")
+            if response.status_code in (429, 500, 502, 503, 504):
+                reasons.append(f"{model}: HTTP {response.status_code}")
+                time.sleep(10 * (attempt + 1))
+                continue
+            try:
+                text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
+                return _parse(text), model
+            except (ValueError, KeyError, IndexError) as exc:
+                reasons.append(f"{model}: unreadable answer ({exc.__class__.__name__})")
+                continue
+    raise RuntimeError("Gemini call failed: " + "; ".join(reasons[-4:]))
 
 
-def summarize(opportunities: list[Opportunity], counts: str) -> str | None:
-    """Fill opp.summary in place where Gemini gives a grounded answer. Returns the intro, if any."""
-    if not config.GEMINI_API_KEY or not opportunities:
-        log.info("No Gemini key or nothing to summarize; keeping the built-in summaries.")
-        return None
+def summarize(opportunities: list[Opportunity], counts: str) -> tuple[str | None, str]:
+    """Fill opp.summary in place where Gemini gives a grounded answer.
+
+    Returns (intro or None, a one-line status for the review issue).
+    """
+    if not opportunities:
+        return None, "AI summaries: nothing new to summarize."
+    if not config.GEMINI_API_KEY:
+        log.info("No Gemini key; keeping the built-in summaries.")
+        return None, "AI summaries: off (no GEMINI_API_KEY secret), so the built-in summaries were used."
     prompt = PROMPT.format(counts=counts, items=json.dumps([_compact(o) for o in opportunities], indent=1))
     try:
-        result = _call_gemini(prompt)
+        result, model = _call_gemini(prompt)
     except RuntimeError as exc:
         log.warning("%s; keeping the built-in summaries.", exc)
-        return None
+        return None, f"AI summaries: failed, so the built-in summaries were used. {exc}"
 
+    used = 0
     summaries = result.get("summaries") if isinstance(result, dict) else None
     if isinstance(summaries, dict):
         by_id = {o.id: o for o in opportunities}
@@ -108,13 +149,14 @@ def summarize(opportunities: list[Opportunity], counts: str) -> str | None:
             text = clean_text(text)
             if 20 <= len(text) <= 320 and _grounded(text, opp):
                 opp.summary = text
+                used += 1
             else:
                 log.info("Kept the built-in summary for %s (AI text failed the checks).", opp_id)
+    status = f"AI summaries: on ({model}); {used} of {len(opportunities)} passed the fact checks."
 
     intro = result.get("intro") if isinstance(result, dict) else None
     if isinstance(intro, str):
         intro = clean_text(intro)
-        allowed = _numbers(counts)
-        if 20 <= len(intro) <= 500 and _numbers(intro) <= allowed:
-            return intro
-    return None
+        if 20 <= len(intro) <= 500 and _numbers(intro) <= _numbers(counts):
+            return intro, status
+    return None, status

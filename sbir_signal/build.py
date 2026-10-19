@@ -47,6 +47,8 @@ Tags
 
 Web preview of this draft: {preview}
 
+{ai_status}
+
 ---
 
 """
@@ -71,7 +73,10 @@ def main(argv: list[str] | None = None) -> int:
         _output(drafted="false")
         return 0
 
-    intro = None if args.no_ai else summarize(to_summarize, issue.counts)
+    if args.no_ai:
+        intro, ai_status = None, "AI summaries: skipped (--no-ai)."
+    else:
+        intro, ai_status = summarize(to_summarize, issue.counts)
     issue.intro = intro or default_intro(issue)
 
     out_dir = config.DRAFTS_DIR / issue.slug
@@ -85,7 +90,9 @@ def main(argv: list[str] | None = None) -> int:
     substack_body = render_markdown(issue, substack=True)
     (out_dir / "substack.md").write_text(substack_body, encoding="utf-8")
     preview = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'aimindteams/sbir-signal')}/blob/main/drafts/{issue.slug}/issue.md"
-    header = REVIEW_HEADER.format(title=issue.title, subtitle=issue.subtitle, tags=", ".join(issue.tags), preview=preview)
+    header = REVIEW_HEADER.format(
+        title=issue.title, subtitle=issue.subtitle, tags=", ".join(issue.tags), preview=preview, ai_status=ai_status
+    )
     (out_dir / "review.md").write_text(header + substack_body, encoding="utf-8")
 
     for opp in to_summarize:
