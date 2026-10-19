@@ -1,0 +1,396 @@
+{
+ "issues": [],
+ "open": {
+  "grants.gov:359669": {
+   "agency": "National Institutes of Health (Department of Health and Human Services)",
+   "deadline": "2029-04-05",
+   "deep_parsed": false,
+   "description": "The Commercialization Readiness Pilot (CRP) program helps small business concerns (SBCs) move NIH-funded SBIR or STTR projects from late-stage development to commercialization. The CRP supports later-stage research and development (R&D) and/or technical assistance that Phase II and Phase IIB Strategic Breakthrough awards do not typically support. This includes:Independent replication or confirmation of key studiesIND- or IDE-enabling studiesClinical studiesManufacturing scale-up and related quality activitiesRegulatory and other specialized technical supportSBCs may subcontract (outsource) a significant amount of the work in a CRP to meet the project goals.\n\nEligibility: Only United States small business concerns (SBCs), as defined by the Small Business Administration (SBA)(sbir.gov/apply) are eligible to submit applications for this opportunity.Refer to Section III. Eligibility Information in the NOFO for additional information on eligibility.Foreign Organizations/International Collaborations:Non-domestic (non-U.S.) Entities (Foreign Organizations) are not eligible to apply.Non-domestic (non-U.S.) components of U.S. Organizations are not eligible to apply.Unfunded international collaborations or unfunded foreign components, as defined in the NIH Grants Policy Statement, may be allowed.\n\nAssistance listings: 93.113 Environmental Health; 93.121 Oral Diseases and Disorders Research; 93.143 NIEHS Superfund Hazardous Substances_Basic Research and Education; 93.172 Human Genome Re",
+   "facts": [
+    "Who can apply: Eligibility Information in the NOFO for additional information on eligibility.Foreign Organizations/International Collaborations:Non-domestic (non-U.S.) Entities\u2026"
+   ],
+   "funding": [],
+   "group": "Health",
+   "id": "grants.gov:359669",
+   "kind": "open",
+   "kind_label": "Open solicitation",
+   "links": [],
+   "number": "PAR-27-098",
+   "phase": null,
+   "posted": "2026-05-28",
+   "program": "SBIR/STTR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "The CRP supports later-stage research and development (R&D) and/or technical assistance that Phase II and Phase IIB Strategic Breakthrough awards do not typically support.",
+   "title": "SBIR/STTR Commercialization Readiness Pilot (CRP) Program (Parent SB1 Clinical Trial Optional)",
+   "url": "https://www.grants.gov/search-results-detail/359669"
+  },
+  "grants.gov:359671": {
+   "agency": "National Institutes of Health (Department of Health and Human Services)",
+   "deadline": "2027-04-05",
+   "deep_parsed": false,
+   "description": "The Small Business Innovation Research (SBIR) program helps United States small business concerns (SBCs) bring scientific innovations to the marketplace. The SBIR program supports feasibility studies to later research and development (R&D) needed to develop a commercial product.\n\nEligibility: Only United States small business concerns (SBCs), as defined by the Small Business Administration (SBA)(sbir.gov/apply) are eligible to submit applications for this opportunity.Refer to Section III. Eligibility Information in the NOFO for additional information on eligibility. Foreign Organizations/International Collaborations:Non-domestic (non-U.S.) Entities (Foreign Organizations) are not eligible to apply.Non-domestic (non-U.S.) components of U.S. Organizations are not eligible to apply.Unfunded international collaborations or unfunded foreign components, as defined in the NIH Grants Policy Statement, may be allowed.\n\nAssistance listings: 93.068 Chronic Diseases: Research, Control, and Prevention; 93.070 Environmental Public Health and Emergency Response; 93.073 Birth Defects and Developmental Disabilities - Prevention and Surveillance; 93.083 Prevention of Disease, Disability, and Death through Immunization and Control of Respiratory and Related Diseases; 93.084 Prevention of Disease, Disability, and Death by Infectious Diseases; 93.103 Food and Drug Administration Research; 93.113 Environmental Health; 93.121 Oral Diseases and Disorders Research; 93.136 Injury Prevention and Contro",
+   "facts": [
+    "Who can apply: Eligibility Information in the NOFO for additional information on eligibility."
+   ],
+   "funding": [],
+   "group": "Health",
+   "id": "grants.gov:359671",
+   "kind": "open",
+   "kind_label": "Open solicitation",
+   "links": [],
+   "number": "PA-27-100",
+   "phase": null,
+   "posted": "2026-05-28",
+   "program": "SBIR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "The SBIR program supports feasibility studies to later research and development (R&D) needed to develop a commercial product.",
+   "title": "NIH, CDC and FDA Small Business Innovation Research Grant (Parent SBIR [R43/R44] Clinical Trial Optional)",
+   "url": "https://www.grants.gov/search-results-detail/359671"
+  },
+  "grants.gov:359757": {
+   "agency": "National Institutes of Health (Department of Health and Human Services)",
+   "deadline": "2027-04-05",
+   "deep_parsed": false,
+   "description": "The Small Business Technology Transfer (STTR) grant program helps United States small business concerns (SBCs) that partner with a nonprofit research institution bring scientific innovations to the marketplace. The STTR program supports feasibility studies to later stage research and development (R&D) needed to develop a commercial product.\n\nEligibility: Only United States small business concerns (SBCs), as defined by the Small Business Administration (SBA)(sbir.gov/apply) are eligible to submit applications for this opportunity.Refer to Section III. Eligibility Information in the NOFO for additional information on eligibility.Foreign Organizations/International Collaborations:Non-domestic (non-U.S.) Entities (Foreign Organizations) are not eligible to apply.Non-domestic (non-U.S.) components of U.S. Organizations are not eligible to apply.Unfunded international collaborations or unfunded foreign components, as defined in the NIH Grants Policy Statement, may be allowed.\n\nAssistance listings: 93.113 Environmental Health; 93.121 Oral Diseases and Disorders Research; 93.172 Human Genome Research; 93.173 Research Related to Deafness and Communication Disorders; 93.213 Research and Training in Complementary and Integrative Health; 93.233 National Center on Sleep Disorders Research; 93.242 Mental Health Research Grants; 93.273 Alcohol Research Programs; 93.279 Drug Use and Addiction Research Programs; 93.286 Discovery and Applied Research for Technological Innovations to Improve Hu",
+   "facts": [
+    "Who can apply: Eligibility Information in the NOFO for additional information on eligibility.Foreign Organizations/International Collaborations:Non-domestic (non-U.S.) Entities\u2026"
+   ],
+   "funding": [],
+   "group": "Health",
+   "id": "grants.gov:359757",
+   "kind": "open",
+   "kind_label": "Open solicitation",
+   "links": [],
+   "number": "PA-27-102",
+   "phase": null,
+   "posted": "2026-05-28",
+   "program": "STTR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "The STTR program supports feasibility studies to later stage research and development (R&D) needed to develop a commercial product.",
+   "title": "NIH Small Business Technology Transfer Grant (Parent STTR [R41/R42] Clinical Trial Optional)",
+   "url": "https://www.grants.gov/search-results-detail/359757"
+  },
+  "grants.gov:359758": {
+   "agency": "National Institutes of Health (Department of Health and Human Services)",
+   "deadline": "2029-04-05",
+   "deep_parsed": false,
+   "description": "The NIH Phase IIB Strategic Breakthrough award bridges the funding gap between the end of a Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) Phase II award and commercialization. The Phase IIB Strategic Breakthrough provides previously funded NIH SBIR or STTR projects additional support for later-stage research and development (R&D).\n\nEligibility: Only United States small business concerns (SBCs) that have previously received an NIH SBIR or STTR Phase II award are eligible to submit applications for this opportunity. Only one NIH Phase IIB Strategic Breakthrough award is allowed per project. This NOFO supports Renewal/Resubmission \"Type 2\" Applications from recipients with NIH Phase II SBIR/STTR awards that are submitted within the first six due dates following the expiration of their budget period. Refer to Section III. Eligibility Information in the NOFO for additional information on eligibility.Foreign Organizations/International Collaborations:Non-domestic (non-U.S.) Entities (Foreign Organizations) are not eligible to apply.Non-domestic (non-U.S.) components of U.S. Organizations are not eligible to apply.Unfunded international collaborations or unfunded foreign components, as defined in the NIH Grants Policy Statement, may be allowed.\n\nAssistance listings: 93.233 National Center on Sleep Disorders Research; 93.242 Mental Health Research Grants; 93.273 Alcohol Research Programs; 93.307 Minority Health and Health Disparities Research",
+   "facts": [
+    "Who can apply: Only one NIH Phase IIB Strategic Breakthrough award is allowed per project."
+   ],
+   "funding": [],
+   "group": "Health",
+   "id": "grants.gov:359758",
+   "kind": "open",
+   "kind_label": "Open solicitation",
+   "links": [],
+   "number": "PA-27-101",
+   "phase": "Phase IIB",
+   "posted": "2026-05-28",
+   "program": "SBIR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "The NIH Phase IIB Strategic Breakthrough award bridges the funding gap between the end of a Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) Phase II award and commercialization.",
+   "title": "NIH Small Business Innovation Research (SBIR) Phase IIB Strategic Breakthrough Award (Parent [R44] Clinical Trial Optional)",
+   "url": "https://www.grants.gov/search-results-detail/359758"
+  },
+  "grants.gov:362551": {
+   "agency": "National Science Foundation",
+   "deadline": "2026-11-04",
+   "deep_parsed": false,
+   "description": "NSF invests in scientific discoveries, technological breakthroughs, and transformative innovations that strengthen economic growth, enhance security, and improve the lives of Americans and people around the world. Our ability to support that mission requires a robust scientific and engineering (S&E) enterprise in the United States that allows scientists to innovate at the frontier. In addition to funding scientists, America needs next-generation scientific instrumentation that allows scientists to pursue new innovations. In many fields, it is critical that this new scientific instrumentation is developed in the United States.\n\nIn support of this mission, NSF is initiating a pilot emphasis area for its SBIR/STTR programs to invest in startups and small businesses that are specifically developing enabling technologies that include next-generation instrumentation, novel experimental platforms, and other scientific equipment to advance the frontiers of scientific discovery and strengthen the American scientific and engineering enterprise. This encompasses novel instrumentation necessary for the coming era of AI-driven discoveries. This pilot will prioritize investing in the necessary infrastructure to support entirely new fields of scientific discovery, making new technological breakthroughs and transformative applications possible. Through this approach, NSF will continue to lead in propelling the scientific enterprise to new frontiers.\n\nThis pilot emphasis area for the NSF SBIR",
+   "facts": [
+    "Who can apply: *Who May Serve as PI: Who May Serve as PI: The primary employment of the Principal Investigator (PI) must be with the small business at the time of award and for the\u2026"
+   ],
+   "funding": [
+    "About $40M in total"
+   ],
+   "group": "Science and space",
+   "id": "grants.gov:362551",
+   "kind": "open",
+   "kind_label": "Open solicitation",
+   "links": [
+    {
+     "title": "NSF Publication 26-511",
+     "url": "http://www.nsf.gov/publications/pub_summ.jsp?ods_key=nsf26511"
+    }
+   ],
+   "number": "26-511",
+   "phase": "Phase I",
+   "posted": "2026-05-22",
+   "program": "SBIR/STTR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "In support of this mission, NSF is initiating a pilot emphasis area for its SBIR/STTR programs to invest in startups and small businesses that are specifically developing enabling technologies that include next-generation instrumentation\u2026",
+   "title": "NSF Small Business Innovation Research / Small Business Technology Transfer Phase I, Phase II, Fast-Track Programs: A Pilot Emphasis on Scientific Instrumentation",
+   "url": "https://www.grants.gov/search-results-detail/362551"
+  },
+  "grants.gov:362576": {
+   "agency": "National Institutes of Health (Department of Health and Human Services)",
+   "deadline": null,
+   "deep_parsed": false,
+   "description": "The National Institutes of Health (NIH) and Centers for Disease Control and Prevention (CDC), including the participating Institutes, Centers and Offices, intend to publish a Notice of Funding Opportunity (NOFO) to invite eligible United States small business concerns (SBCs) to submit Small Business Innovation Research (SBIR) Phase I, and Fast-Track (NIH only) grant applications for the Small Business Transition Grant. Through this NOFO, NIH and CDC will support early-career scientists as they transition into entrepreneurship. In addition to funding research and development efforts at the SBC, a major component of this NOFO is entrepreneurial training, mentoring, and career development of the PD/PI.\n\nApplications are not being solicited at this time. Notice is being provided to allow potential applicants sufficient time to develop responsive projects, including identification of complementary industry mentors and career development resources. This NOFO will utilize the R43/R44 activity code. United States small businesses that have the research capabilities and technological expertise to contribute to the R&D mission(s) of the NIH and CDC awarding components identified in this NOFO are encouraged to begin to consider applying for this new NOFO. This opportunity is available to first-time Principal Investigators, and key personnel must include a mentor with measurable effort committed to the project.\n\nEligibility: Only United States small business concerns (SBCs), as defined b",
+   "facts": [
+    "Who can apply: Individuals are eligible to serve as the PD/PI if they have never been an independent PD/PI on an NIH or CDC research, or corresponding non-NIH peer-reviewed research\u2026"
+   ],
+   "funding": [],
+   "group": "Health",
+   "id": "grants.gov:362576",
+   "kind": "forecast",
+   "kind_label": "Forecast (not open yet)",
+   "links": [],
+   "number": "PAR-27-039",
+   "phase": null,
+   "posted": "2026-05-27",
+   "program": "SBIR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "The National Institutes of Health (NIH) and Centers for Disease Control and Prevention (CDC), including the participating Institutes, Centers and Offices, intend to publish a Notice of Funding\u2026",
+   "title": "Small Business Transition Grant for New Entrepreneurs (Parent R43/R44 Clinical Trial Optional)",
+   "url": "https://www.grants.gov/search-results-detail/362576"
+  },
+  "grants.gov:362577": {
+   "agency": "National Institutes of Health (Department of Health and Human Services)",
+   "deadline": null,
+   "deep_parsed": false,
+   "description": "The National Institutes of Health (NIH), including the participating Institutes, Centers and Offices, intends to publish a Notice of Funding Opportunity (NOFO) to invite eligible United States small business concerns (SBCs) to submit Small Business Technology Transfer (STTR) Phase I, and Fast-Track grant applications for the Small Business Transition Grant. Through this NOFO, NIH will support early-career scientists transitioning to entrepreneurship. In addition to funding research and development efforts at the SBC, a major component of this NOFO is entrepreneurial training, mentoring, and career development of the PD/PI.\n\nApplications are not being solicited at this time. Notice is being provided to allow potential applicants sufficient time to develop responsive projects, including identification of complementary industry mentors and career development resources. This NOFO will utilize the R41/R42 activity code. United States small businesses that have the research capabilities and technological expertise to contribute to the R&D mission(s) of the NIH awarding components identified in this NOFO are encouraged to begin to consider applying for this new NOFO. This opportunity is available to first-time Principal Investigators, and key personnel must include a mentor with measurable effort committed to the project.\n\nEligibility: Only United States small business concerns (SBCs), as defined by the Small Business Administration (SBA)(sbir.gov/apply) are eligible to submit appli",
+   "facts": [
+    "Who can apply: Individuals are eligible to serve as the PD/PI if they have never been an independent PD/PI on an NIH or CDC research, or corresponding non-NIH peer-reviewed research\u2026"
+   ],
+   "funding": [],
+   "group": "Health",
+   "id": "grants.gov:362577",
+   "kind": "forecast",
+   "kind_label": "Forecast (not open yet)",
+   "links": [],
+   "number": "PAR-27-040",
+   "phase": null,
+   "posted": "2026-05-27",
+   "program": "STTR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "The National Institutes of Health (NIH), including the participating Institutes, Centers and Offices, intends to publish a Notice of Funding Opportunity (NOFO) to invite eligible United States small\u2026",
+   "title": "Small Business Transition Grant for New Entrepreneurs (Parent R41/R42 Clinical Trial Optional)",
+   "url": "https://www.grants.gov/search-results-detail/362577"
+  },
+  "grants.gov:363966": {
+   "agency": "Administration for Community Living (Department of Health and Human Services)",
+   "deadline": null,
+   "deep_parsed": false,
+   "description": "The purpose of the Federal SBIR program is to stimulate technological innovation in the private sector, strengthen the role of small business in meeting Federal research or research and development (R/R&D) needs, and improve the return on investment from Federally-funded research for economic and social benefits to the nation. The specific purpose of ACL's SBIR program is to improve the lives of people with disabilities through R/R&D products generated by small businesses, and to increase the commercial application of ACL-supported research results and development products. Phase I SBIR grants are intended to conduct research to determine the scientific or technical merit and feasibility of concepts, topics, or ideas. NIDILRR will make 11 grants under this opportunity. Grants will have a 6-month project period with a corresponding six-month budget period.\n\nEligibility: Each organization submitting an application must qualify at the time of the award as a small business concern as defined by the Small Business Administration. Foreign entities are not eligible to compete for, or receive, awards made under this announcement.\n\nAssistance listings: 93.433 ACL National Institute on Disability, Independent Living, and Rehabilitation Research",
+   "facts": [
+    "Who can apply: Foreign entities are not eligible to compete for, or receive, awards made under this announcement."
+   ],
+   "funding": [
+    "Awards of $95,000 to $100,000",
+    "About $1.1M in total"
+   ],
+   "group": "Health",
+   "id": "grants.gov:363966",
+   "kind": "forecast",
+   "kind_label": "Forecast (not open yet)",
+   "links": [
+    {
+     "title": "https://www.acl.gov/grants/applying-grants",
+     "url": "https://www.acl.gov/grants/applying-grants"
+    }
+   ],
+   "number": "HHS-2027-ACL-NIDILRR-BISA-0308",
+   "phase": "Phase I",
+   "posted": "2026-09-25",
+   "program": "SBIR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "The specific purpose of ACL's SBIR program is to improve the lives of people with disabilities through R/R&D products generated by small businesses, and to increase the commercial application of\u2026",
+   "title": "Small Business Innovation Research (SBIR) program, Phase I",
+   "url": "https://www.grants.gov/search-results-detail/363966"
+  },
+  "grants.gov:363967": {
+   "agency": "Administration for Community Living (Department of Health and Human Services)",
+   "deadline": null,
+   "deep_parsed": false,
+   "description": "The purpose of the Federal SBIR program is to stimulate technological innovation in the private sector, strengthen the role of small business in meeting Federal research or research and development (R/R&D) needs, and improve the return on investment from Federally-funded research for economic and social benefits to the nation. The specific purpose of NIDILRR's SBIR program is to improve the lives of people with disabilities through R/R&D products generated by small businesses, and to increase the commercial application of NIDILRR-supported research results and development products. All SBIR projects funded by NIDILRR must address the needs of people with disabilities and promote their health and function, community living, or employment outcomes. Phase II projects expand on the results of and further pursue the development of Phase I projects. NIDILRR will make four grants under this opportunity. Grants will have a 24-month project period with two 12-month budget periods.\n\nEligibility: SBIR Phase I grantees who successfully completed their Phase I grant between October 1, 2024 and December 31, 2026 are eligible to apply. Phase I grantees with funding from NIDILRR or from other agencies are eligible to apply, as long as their applications describe research projects that aim to improve the lives of people with disabilities. Applicants must also continue to be small business concerns. Foreign entities are not eligible to compete for, or receive, awards made under this announceme",
+   "facts": [
+    "Who can apply: SBIR Phase I grantees who successfully completed their Phase I grant between October 1, 2024 and December 31, 2026 are eligible to apply."
+   ],
+   "funding": [
+    "Awards of $280,000 to $287,500",
+    "About $1.15M in total"
+   ],
+   "group": "Health",
+   "id": "grants.gov:363967",
+   "kind": "forecast",
+   "kind_label": "Forecast (not open yet)",
+   "links": [
+    {
+     "title": "https://www.acl.gov/grants/applying-grants",
+     "url": "https://www.acl.gov/grants/applying-grants"
+    }
+   ],
+   "number": "HHS-2027-ACL-NIDILRR-BISB-0309",
+   "phase": "Phase II",
+   "posted": "2026-09-25",
+   "program": "SBIR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "The specific purpose of NIDILRR's SBIR program is to improve the lives of people with disabilities through R/R&D products generated by small businesses, and to increase the commercial application of\u2026",
+   "title": "Small Business Innovation Research Program (SBIR) Phase II",
+   "url": "https://www.grants.gov/search-results-detail/363967"
+  },
+  "grants.gov:364020": {
+   "agency": "National Institute of Food and Agriculture (Department of Agriculture)",
+   "deadline": "2026-11-17",
+   "deep_parsed": true,
+   "description": "The USDA SBIR/STTR programs, Assistance Listing number 10.212, support scientific excellence and technological innovation through investment of Federal research funds to build a strong national economy by stimulating technological innovation in the private sector; strengthening the role of small business in meeting Federal research and development needs; and increasing the commercial application of Federally supported research results. Further, the objective of the STTR program is to stimulate formal cooperative partnerships of ideas and technologies between small businesses and partnering research institutions (e.g., Universities and Federal laboratories).\n\nEligibility: Eligibility for the SBIR/STTR Phase II program is limited to only SBIR/STTR Phase I recipients. This includes recipients identified via a \u201cnovated\u201d or \u201csuccessor-in-interest\u201d revised funding agreement. Failure to meet the eligibility criteria by the application deadline may result in exclusion from consideration or preclude NIFA from making an award. For those new to Federal financial assistance, NIFA\u2019s About Grants provides highly recommended information about grants and other resources to help understand the Federal awards process.\n\nEach applicant must qualify as an SBC through registration with the SBA for R/R&D purposes at the time of selection (see Definitions in Appendix III of this NOFO).\n\nSBIR/STTR program eligibility requirements are in place to ensure that the funds go only to small, independent U.S",
+   "facts": [
+    "Who can apply: Eligibility for the SBIR/STTR Phase II program is limited to only SBIR/STTR Phase I recipients.",
+    "Page limits: 20 pages (project narrative), 1 page (response to previous review), 3 pages (TABA plan), 10 pages",
+    "Format: 12 pt, Times New Roman, 1 inch",
+    "Submit through Grants.gov Workspace",
+    "Read 1 attached document (61 pages)"
+   ],
+   "funding": [
+    "Awards of $600,000 to $650,000",
+    "About $24.75M in total"
+   ],
+   "group": "Agriculture and environment",
+   "id": "grants.gov:364020",
+   "kind": "open",
+   "kind_label": "Open solicitation",
+   "links": [
+    {
+     "title": "Small Business Innovation Research and Small Business Technology Transfer Programs Phase II",
+     "url": "https://www.nifa.usda.gov/grants/funding-opportunities/small-business-innovation-research-small-business-technology"
+    }
+   ],
+   "number": "USDA-NIFA-SBIR-012221",
+   "phase": "Phase II",
+   "posted": "2026-10-01",
+   "program": "SBIR/STTR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "Further, the objective of the STTR program is to stimulate formal cooperative partnerships of ideas and technologies between small businesses and partnering research institutions (e.g., Universities and Federal laboratories).",
+   "title": "Small Business Innovation Research and Small Business Technology Transfer Programs Phase II",
+   "url": "https://www.grants.gov/search-results-detail/364020"
+  },
+  "sam.gov:6785c01dbc8f49e6acf889415bf6e062": {
+   "agency": "Army (Department of Defense)",
+   "deadline": null,
+   "deep_parsed": true,
+   "description": "This SAM notice is to highlight the G-TEAD USAREUR-AF ACE 27-02 Spectrum Enabled Warfare Powered by XTECH.\n\nAccelerated Capability Event 27-02 | Spectrum Enabled Warfare See: https://xtech.army.mil/ for official response date.\n\nDescription:\n\nThe U.S. Army, through the Global Tactical Edge Acquisition Directorate (G-TEAD) and U.S. Army Europe and Africa (USAREUR-AF), in operational partnership with the U.S. Army FUZE xTech Program, is conducting an Accelerated Capability Event (ACE) to evaluate, demonstrate, and acquire operationally mature (TRL 6+) electromagnetic spectrum operations (EMSO) capabilities.\n\nThis effort enables U.S. Army forces operating within a North Atlantic Treaty Organization (NATO) and joint coalition framework on the Eastern Flank to sense, understand, exploit, attack, and protect across a contested electromagnetic environment (EME) and connected cyberspace. To preserve combat power and freedom of maneuver, forces must protect tactical command and control (C2) networks while delivering synchronized lethal and non-lethal effects at depth against adversary systems.\n\nThe G-TEAD Library of Competed Capabilities utilizes Accelerated Capability Events (ACEs) via including, but not limited to, Prize Challenge events (e.g., Army xTech Program) and Alternate Pathway submissions through open call announcements to create a competitive, compliant, and scalable acquisition framework. Vendors who qualify will have their capabilities added to the G-TEAD Library of Compe",
+   "facts": [
+    "Page limits: 4 pages",
+    "Submit through DSIP (DoD SBIR/STTR Innovation Portal)",
+    "Read 1 attached document (23 pages)"
+   ],
+   "funding": [],
+   "group": "Defense",
+   "id": "sam.gov:6785c01dbc8f49e6acf889415bf6e062",
+   "kind": "notice",
+   "kind_label": "Special notice",
+   "links": [
+    {
+     "title": "SBIR Solicitations",
+     "url": "https://www.dodsbirsttr.mil/topics-app/"
+    },
+    {
+     "title": "DLA CAGE Code Process",
+     "url": "https://www.dla.mil/Working-With-DLA/Applications/Details/Article/2920893/cage-code-commercial-and-government-entity-code/"
+    },
+    {
+     "title": "NCAGE Registration Process",
+     "url": "https://www.nspa.nato.int/business/frequently-asked-questions/what-is-the-procedure-to-apply-for-a-ncage-code"
+    }
+   ],
+   "number": "W912CM-25-GTEADACE27-02",
+   "phase": null,
+   "posted": "2026-10-15",
+   "program": null,
+   "source": "sam.gov",
+   "source_label": "SAM.gov",
+   "summary": "The U.S. Army, through the Global Tactical Edge Acquisition Directorate (G-TEAD) and U.S. Army Europe and Africa (USAREUR-AF), in operational partnership with the U.S. Army FUZE xTech Program, is conducting an Accelerated Capability Event\u2026",
+   "title": "Global Tactical Edge Acquisition Directorate Accelerated Capability Event 27-02- Spectrum Enabled Warfare",
+   "url": "https://sam.gov/opp/6785c01dbc8f49e6acf889415bf6e062/view"
+  },
+  "sam.gov:82c25ab2750f410cb73817384e8d9fb3": {
+   "agency": "Environmental Protection Agency",
+   "deadline": "2026-11-08",
+   "deep_parsed": false,
+   "description": "EPA Small Business Innovation Research Program (SBIR) FY26 Phase I Solicitation",
+   "facts": [
+    "Submit through FedConnect"
+   ],
+   "funding": [],
+   "group": "Agriculture and environment",
+   "id": "sam.gov:82c25ab2750f410cb73817384e8d9fb3",
+   "kind": "open",
+   "kind_label": "Open solicitation",
+   "links": [
+    {
+     "title": "Click here to see more information about this opportunity on FedConnect",
+     "url": "https://www.fedconnect.net/FedConnect/?doc=68HERW26R0102&agency=EPA"
+    }
+   ],
+   "number": "68HERW26R0102",
+   "phase": null,
+   "posted": "2026-10-13",
+   "program": null,
+   "source": "sam.gov",
+   "source_label": "SAM.gov",
+   "summary": "EPA Small Business Innovation Research Program (SBIR) FY26 Phase I Solicitation",
+   "title": "SBIR FY26 Phase I Broad Agency Announcement",
+   "url": "https://sam.gov/opp/82c25ab2750f410cb73817384e8d9fb3/view"
+  },
+  "sam.gov:87d44d4915154e8293f10bc9bf53fbed": {
+   "agency": "Department of Defense",
+   "deadline": null,
+   "deep_parsed": false,
+   "description": "The Department of War (DoW) Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) Programs aim to stimulate technological innovation by strengthening the role of small businesses in meeting DoW research and development needs, delivering innovative technology to the Warfighter, and growing the defense industrial base through commercialization.\n\nThis announcement serves as an umbrella for each of the annual DoW SBIR/STTR program solicitations. Proposers are encouraged to carefully review the details for each to determine the best fit for their organization and technology. The solicitations are:\n\nDoW SBIR 2027 Broad Agency Announcement (BAA)\n\nDOW SBIR 2027 Commercial Solutions Opening (CSO)\n\nDoW STTR 2027 BAA\n\nDoW STTR 2027 CSO\n\n(Under 15 U.S.C. \u00a7 638(yy), DoW has established the pilot program allowing eligible military research or educational institutions established under title 10, U.S.C., to qualify as a Research Institute in the DoW STTR Program. For this solicitation, these institutions are referred to as Military Service Academies (MSAs). MSAs may participate in accordance with the pilot program, provided they meet all other requirements of the solicitation. Appendix B provides the complete list of eligible MSAs under the pilot program authority.)\n\nDoW Services and Components may elect to release topics under the appropriate solicitation once a month throughout fiscal year 2027. Each release will have corresponding open and close dates app",
+   "facts": [
+    "Submit through DSIP (DoD SBIR/STTR Innovation Portal)"
+   ],
+   "funding": [],
+   "group": "Defense",
+   "id": "sam.gov:87d44d4915154e8293f10bc9bf53fbed",
+   "kind": "notice",
+   "kind_label": "Special notice",
+   "links": [
+    {
+     "title": "SBIR|STTR Active Solicitation Link",
+     "url": "https://www.dodsbirsttr.mil/submissions/login"
+    },
+    {
+     "title": "DSIP Listserv Registration Link",
+     "url": "https://secure.campaigner.com/CSB/Public/Form.aspx?fid=667492&ac=g9gk"
+    }
+   ],
+   "number": "W5170127R0001",
+   "phase": null,
+   "posted": "2026-10-07",
+   "program": null,
+   "source": "sam.gov",
+   "source_label": "SAM.gov",
+   "summary": "This announcement serves as an umbrella for each of the annual DoW SBIR/STTR program solicitations.",
+   "title": "Department of War (DoW) Small Business Innovative Research (SBIR) | Small Business Technology Transfer (STTR) Program Solicitations for FY2027",
+   "url": "https://sam.gov/opp/87d44d4915154e8293f10bc9bf53fbed/view"
+  }
+ },
+ "seen": {
+  "grants.gov:359669": "2026-10-19",
+  "grants.gov:359671": "2026-10-19",
+  "grants.gov:359757": "2026-10-19",
+  "grants.gov:359758": "2026-10-19",
+  "grants.gov:362551": "2026-10-19",
+  "grants.gov:362576": "2026-10-19",
+  "grants.gov:362577": "2026-10-19",
+  "grants.gov:363966": "2026-10-19",
+  "grants.gov:363967": "2026-10-19",
+  "grants.gov:364020": "2026-10-19",
+  "sam.gov:6785c01dbc8f49e6acf889415bf6e062": "2026-10-19",
+  "sam.gov:82c25ab2750f410cb73817384e8d9fb3": "2026-10-19",
+  "sam.gov:87d44d4915154e8293f10bc9bf53fbed": "2026-10-19"
+ }
+}
