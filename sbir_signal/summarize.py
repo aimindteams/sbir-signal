@@ -39,7 +39,7 @@ Opportunities:
 """
 
 NUMBER_RE = re.compile(r"\d[\d,.]*")
-FALLBACK_MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-flash-latest"]
+FALLBACK_MODELS = ["gemini-3.6-flash", "gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-flash-latest"]
 
 
 def _compact(opp: Opportunity) -> dict:

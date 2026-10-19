@@ -137,7 +137,7 @@ def test_gemini_falls_back_when_a_model_is_retired(monkeypatch):
         return httpx.Response(200, json=payload, request=request)
 
     monkeypatch.setattr(config, "GEMINI_API_KEY", "test-key")
-    monkeypatch.setattr(config, "GEMINI_MODEL", "gemini-3.8-flash")
+    monkeypatch.setattr(config, "GEMINI_MODEL", "gemini-3.8-flash")  # pretend the configured model is retired
     monkeypatch.setattr(summarize.httpx, "post", fake_post)
     result, model = summarize._call_gemini("prompt")
     assert model == "gemini-3.6-flash" and result["intro"] == "x"

@@ -42,7 +42,7 @@ ACTOR_MAX_CHARGE_USD = 2.0
 
 # Gemini (free tier) writes the one-line summaries. Without a key the build still works.
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY") or ""
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL") or "gemini-3.8-flash"  # free tier; others are tried if it is retired
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL") or "gemini-3.6-flash"  # works on this key; others are tried if it is retired
 
 # Issue layout.
 TIMEZONE = ZoneInfo("America/New_York")
