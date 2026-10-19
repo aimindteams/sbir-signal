@@ -128,6 +128,13 @@ def test_build_and_publish_end_to_end(items, sandbox):
     assert "## Closing soon" in markdown and "## Open now" in markdown
     for text in (markdown, html):
         assert EM_DASH not in text and EN_DASH not in text
+    review = (draft / "review.md").read_text(encoding="utf-8")
+    assert "```text\nSBIR Signal: October 19, 2026\n```" in review
+    assert "```text\n9 open SBIR/STTR opportunities, 2 closing within 3 weeks, 4 forecasts\n```" in review
+    assert "```text\nSBIR, STTR, Weekly issue, NSF, EPA, Defense, NIH, USDA, HHS\n```" in review
+    body = review.split("\n---\n", 1)[1]
+    assert not body.lstrip().startswith("#") and "**This week:**" not in body
+    assert f"drafts/{TODAY.isoformat()}" in review  # publish.yml finds the date here
     state = json.loads((config.DATA_DIR / "state.json").read_text())
     assert len(state["seen"]) == 13  # 16 items minus three stale 2025 forecasts
 

@@ -59,8 +59,9 @@ def _env(autoescape: bool) -> Environment:
     return env
 
 
-def render_markdown(issue: Issue) -> str:
-    return _env(False).get_template("issue.md.j2").render(issue=issue, year=issue.issue_date.year)
+def render_markdown(issue: Issue, substack: bool = False) -> str:
+    """The issue as Markdown. substack=True leaves out the title and stats line, which go in Substack's own fields."""
+    return _env(False).get_template("issue.md.j2").render(issue=issue, year=issue.issue_date.year, substack=substack)
 
 
 def render_issue_html(issue: Issue) -> str:

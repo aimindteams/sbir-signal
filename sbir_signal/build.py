@@ -22,11 +22,28 @@ from .summarize import summarize
 
 log = logging.getLogger("sbir_signal")
 
-REVIEW_HEADER = """**How to publish this issue**
+REVIEW_HEADER = """**Publish on Substack (about 5 minutes)**
 
-1. Read it over. Fix anything in Substack after you paste.
-2. Copy everything below the line into a new Substack post and publish it.
-3. Close this GitHub issue as **completed** to add it to the web archive, or as **not planned** to skip it.
+1. In Substack, click **New post**.
+2. Use the copy button on each box below to fill in the **title** and **subtitle**.
+3. Copy everything below the line into the post body and read it over.
+4. Click **Continue**, set the audience to **Everyone**, add the tags below one at a time, and publish (or schedule it).
+5. Back here, close this issue as **completed** to add it to the web archive, or as **not planned** to skip it.
+
+Title
+```text
+{title}
+```
+
+Subtitle
+```text
+{subtitle}
+```
+
+Tags
+```text
+{tags}
+```
 
 Web preview of this draft: {preview}
 
@@ -65,8 +82,11 @@ def main(argv: list[str] | None = None) -> int:
     (out_dir / "meta.json").write_text(
         json.dumps({"date": issue.slug, "title": issue.title, "summary": issue.intro}, indent=1) + "\n", encoding="utf-8"
     )
+    substack_body = render_markdown(issue, substack=True)
+    (out_dir / "substack.md").write_text(substack_body, encoding="utf-8")
     preview = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'aimindteams/sbir-signal')}/blob/main/drafts/{issue.slug}/issue.md"
-    (out_dir / "review.md").write_text(REVIEW_HEADER.format(preview=preview) + markdown, encoding="utf-8")
+    header = REVIEW_HEADER.format(title=issue.title, subtitle=issue.subtitle, tags=", ".join(issue.tags), preview=preview)
+    (out_dir / "review.md").write_text(header + substack_body, encoding="utf-8")
 
     for opp in to_summarize:
         open_map[opp.id] = opp  # carries the new summaries

@@ -1,9 +1,13 @@
+{% if not substack %}
 # {{ issue.title }}
 
+{% endif %}
 {{ issue.intro }}
 
+{% if not substack %}
 **This week:** {{ issue.new_count }} {{ "open" if issue.first_issue else "new" }} · {{ issue.closing_soon|length }} closing within 3 weeks · {{ issue.forecasts|length }} forecasts
 
+{% endif %}
 {% if issue.closing_soon %}
 ## Closing soon
 

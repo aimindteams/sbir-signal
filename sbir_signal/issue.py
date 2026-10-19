@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 from pathlib import Path
@@ -17,6 +18,20 @@ GROUP_ORDER = [
     "Agriculture and environment",
     "Homeland security and transportation",
     "Other agencies",
+]
+AGENCY_TAGS = [
+    (re.compile(r"National Institutes of Health|\bNIH\b|\bCDC\b|\bFDA\b", re.I), "NIH"),
+    (re.compile(r"Science Foundation", re.I), "NSF"),
+    (re.compile(r"Agriculture", re.I), "USDA"),
+    (re.compile(r"Environmental Protection", re.I), "EPA"),
+    (re.compile(r"NASA|Aeronautics", re.I), "NASA"),
+    (re.compile(r"Energy", re.I), "DOE"),
+    (re.compile(r"Homeland", re.I), "DHS"),
+    (re.compile(r"Defense|Army|Navy|Air Force|Space Force|DARPA|Missile|War\b", re.I), "Defense"),
+    (re.compile(r"Health and Human Services|Community Living", re.I), "HHS"),
+    (re.compile(r"Commerce|\bNIST\b|\bNOAA\b", re.I), "Commerce"),
+    (re.compile(r"Transportation", re.I), "DOT"),
+    (re.compile(r"Education", re.I), "Education"),
 ]
 FORECAST_MAX_AGE_DAYS = 180
 NOTICE_MAX_AGE_DAYS = 45
@@ -79,6 +94,29 @@ class Issue:
     @property
     def slug(self) -> str:
         return self.issue_date.isoformat()
+
+    @property
+    def subtitle(self) -> str:
+        """One line for Substack's subtitle field."""
+        label = "open" if self.first_issue else "new"
+        noun = "opportunity" if self.new_count == 1 else "opportunities"
+        parts = [f"{self.new_count} {label} SBIR/STTR {noun}"]
+        if self.closing_soon:
+            parts.append(f"{len(self.closing_soon)} closing within 3 weeks")
+        if self.forecasts:
+            parts.append(f"{len(self.forecasts)} forecast" + ("" if len(self.forecasts) == 1 else "s"))
+        return ", ".join(parts)
+
+    @property
+    def tags(self) -> list[str]:
+        """Substack tags: the fixed three plus one per agency in this issue."""
+        tags = ["SBIR", "STTR", "Weekly issue"]
+        items = self.closing_soon + [o for _, group in self.new_groups for o in group] + self.forecasts
+        for opp in items:
+            tag = next((t for pattern, t in AGENCY_TAGS if pattern.search(opp.agency)), None)
+            if tag and tag not in tags:
+                tags.append(tag)
+        return tags
 
 
 def plan_issue(opps: list[Opportunity], state: dict, today: date) -> tuple[Issue, list[Opportunity], dict[str, Opportunity]]:

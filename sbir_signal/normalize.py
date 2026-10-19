@@ -44,7 +44,7 @@ AGENCY_HINTS = [
 AGENCY_GROUPS = [
     ("Defense", re.compile(r"Defense|Army|Navy|Air Force|Space Force|DARPA|Missile|War\b", re.I)),
     ("Health", re.compile(r"Health|NIH|National Institutes|CDC|FDA|Community Living", re.I)),
-    ("Science and space", re.compile(r"Science Foundation|NASA|Energy|Commerce|NIST|NOAA", re.I)),
+    ("Science and space", re.compile(r"Science Foundation|\bNASA\b|Energy|Commerce|\bNIST\b|\bNOAA\b", re.I)),
     ("Agriculture and environment", re.compile(r"Agriculture|Environmental|Interior", re.I)),
     ("Homeland security and transportation", re.compile(r"Homeland|Transportation|Education", re.I)),
 ]
