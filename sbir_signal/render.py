@@ -25,6 +25,9 @@ def short_date(value: str | None, ref_year: int) -> str:
 
 
 def deadline_text(opp: Opportunity, ref_year: int) -> str:
+    if opp.kind == "forecast" and opp.opens:
+        closes = f", closes {short_date(opp.deadline, ref_year)}" if opp.deadline else ""
+        return f"Opens {short_date(opp.opens, ref_year)}{closes}"
     if opp.deadline:
         return f"Due {short_date(opp.deadline, ref_year)}"
     if opp.kind == "forecast":

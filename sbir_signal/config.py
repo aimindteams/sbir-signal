@@ -29,7 +29,7 @@ ACTOR_INPUT = {
     "keywords": ["SBIR", "STTR"],
     "noticeTypes": ["o", "p", "k", "r", "s"],
     "postedWithinDays": 14,
-    "maxItems": 80,
+    "maxItems": 200,
     "includeSbir": True,
     "parseAttachments": True,
     "maxAttachmentsPerNotice": 3,
@@ -47,4 +47,5 @@ GEMINI_MODEL = os.environ.get("GEMINI_MODEL") or "gemini-3.6-flash"  # works on 
 # Issue layout.
 TIMEZONE = ZoneInfo("America/New_York")
 CLOSING_SOON_DAYS = 21
-MAX_NEW_ITEMS = 30
+MAX_NEW_ITEMS = 30        # full entries per issue; the rest are counted and linked
+MAX_LIST_ITEMS = 25       # closing-soon and forecast lines per issue

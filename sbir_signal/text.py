@@ -9,7 +9,8 @@ import re
 BOILERPLATE = re.compile(
     r"purpose of the federal sbir program|stimulate technological innovation|strengthen(?:ing)? the role of small business"
     r"|program helps (?:united states )?small business|invests in scientific discoveries|our ability to support that mission"
-    r"|assistance listing|eligibility:|this sam notice is to highlight|click here",
+    r"|assistance listing|eligibility:|this sam notice is to highlight|click here"
+    r"|\b(?:sbir|sttr) topic [a-z0-9-]+ \((?:open|pre-release)",
     re.I,
 )
 EM_DASH, EN_DASH, NBSP, ELLIPSIS = chr(0x2014), chr(0x2013), chr(0xA0), chr(0x2026)
@@ -42,9 +43,14 @@ def sentences(text: str) -> list[str]:
     return merged
 
 
-SECTION_RE = re.compile(r"\n\s*(Eligibility|Assistance listings?|Purpose|Description)\s*:?\s*\n?", re.I)
+SECTION_RE = re.compile(
+    # A heading at the start of a line, followed by a colon or the end of that line.
+    r"\n\s*(Eligibility|Assistance listings?|Purpose|Description|Objective|Phase III dual-use applications|Phase I{1,3})"
+    r"(?=[ \t]*:|[ \t]*\n)[ \t]*:?\s*",
+    re.I,
+)
 INTENT_RE = re.compile(
-    r"\b(intends? to|will (?:make|fund|support|award)|seeks?|invites?|solicits?|supports?|encourages|is conducting"
+    r"\b(intends? to|will (?:make|fund|support|award)|seeks?|seeking|requests proposals|invites?|solicits?|supports?|encourages|is conducting"
     r"|to (?:fund|develop|evaluate|acquire)|aims? to|helps?|purpose of [\w'\u2019 ]+ is to|bridges)\b",
     re.I,
 )
@@ -61,8 +67,8 @@ def split_sections(text: str) -> tuple[str, dict[str, str]]:
     main, sections = parts[0], {}
     for i in range(1, len(parts) - 1, 2):
         sections[parts[i].lower().split()[0]] = parts[i + 1].strip()
-    if "purpose" in sections or "description" in sections:
-        main = " ".join([main, sections.get("purpose", ""), sections.get("description", "")])
+    if any(k in sections for k in ("objective", "purpose", "description")):
+        main = " ".join([main, sections.get("objective", ""), sections.get("purpose", ""), sections.get("description", "")])
     return main, sections
 
 

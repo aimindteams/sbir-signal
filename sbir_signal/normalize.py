@@ -10,7 +10,7 @@ from typing import Any
 from .config import TIMEZONE
 from .text import clean_text, first_useful_sentence, who_can_apply
 
-SOURCE_LABELS = {"sam.gov": "SAM.gov", "grants.gov": "Grants.gov", "sbir.gov": "SBIR.gov"}
+SOURCE_LABELS = {"sam.gov": "SAM.gov", "grants.gov": "Grants.gov", "sbir.gov": "SBIR.gov", "dsip": "DSIP"}
 
 # SAM.gov writes agency names in capitals; these read better in an email.
 AGENCY_NAMES = {
@@ -82,6 +82,7 @@ class Opportunity:
     phase: str | None
     posted: str | None     # ISO date
     deadline: str | None   # ISO date, America/New_York
+    opens: str | None = None  # ISO date proposals open (pre-release DoD topics)
     funding: list[str] = field(default_factory=list)
     facts: list[str] = field(default_factory=list)
     links: list[dict[str, str]] = field(default_factory=list)
@@ -125,6 +126,8 @@ def nice_agency(name: str | None) -> str | None:
     name = name.strip()
     if name in AGENCY_NAMES:
         return AGENCY_NAMES[name]
+    if name.isupper() and " " not in name:
+        return name  # an acronym such as DARPA or SOCOM
     if name.isupper():
         words = name.title().replace("Dept Of", "Department of").replace(" Of ", " of ").replace(" The ", " the ")
         return words
@@ -156,6 +159,10 @@ def agency_group(agency: str) -> str:
 def classify(item: dict[str, Any]) -> tuple[str, str]:
     code = (item.get("notice_type_code") or "").lower()
     status = ((item.get("sbir_details") or {}).get("current_status") or "").lower()
+    if code == "dsip-prerelease":
+        return "forecast", "Pre-release topic"
+    if code == "dsip-open":
+        return "open", "Open topic"
     if code == "forecast" or status == "forecasted":
         return "forecast", "Forecast (not open yet)"
     if code in {"s", "r", "p", "i"}:
@@ -257,6 +264,21 @@ def normalize_item(item: dict[str, Any]) -> Opportunity:
     eligibility = who_can_apply(description)
     if eligibility:
         facts.insert(0, f"Who can apply: {eligibility}")
+    title = clean_text(re.sub(r"^[A-Z0-9]{1,2}--", "", item.get("title") or "Untitled"))
+    opens = None
+    if source == "dsip":
+        number = item.get("solicitation_number")
+        title = re.sub(r"^OPEN\s*-\s*", "", title)
+        facts = [f for f in facts if not f.startswith("Submit through DSIP")]
+        if number and not title.startswith(number):
+            title = f"{number}: {title}"
+        if kind == "forecast":
+            opens = to_local_date(details.get("open_date"))
+            contact = next((c.get("email") for c in item.get("points_of_contact") or [] if c.get("email")), None)
+            if contact:
+                facts.insert(0, f"Questions before it opens: {contact}")
+        if number:
+            facts.append(f"On DSIP, search for {number}")
     links = [
         {"title": clean_text(link.get("title") or "Link"), "url": link["url"]}
         for link in item.get("external_links") or []
@@ -266,7 +288,7 @@ def normalize_item(item: dict[str, Any]) -> Opportunity:
         id=f"{source}:{item.get('notice_id')}",
         source=source,
         source_label=SOURCE_LABELS.get(source, source),
-        title=clean_text(re.sub(r"^[A-Z0-9]{1,2}--", "", item.get("title") or "Untitled")),
+        title=title,
         url=item.get("url") or "",
         number=item.get("solicitation_number"),
         agency=agency,
@@ -277,6 +299,7 @@ def normalize_item(item: dict[str, Any]) -> Opportunity:
         phase=details.get("phase"),
         posted=to_local_date(item.get("posted_date")),
         deadline=to_local_date(item.get("response_deadline") or details.get("close_date")),
+        opens=opens,
         funding=funding_lines(details),
         facts=facts,
         links=links,

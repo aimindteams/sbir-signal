@@ -207,3 +207,39 @@ def test_publish_never_overwrites_an_archived_issue(items, sandbox):
     publish.main(["--date", TODAY.isoformat()])
     assert page.read_text(encoding="utf-8") == original
     assert not (config.DRAFTS_DIR / TODAY.isoformat()).exists()
+
+
+DSIP_FIXTURE = Path(__file__).parent / "fixtures" / "dsip_items.json"
+
+
+def test_dod_topics_normalize_cleanly():
+    opps = {o.number: o for o in normalize(json.loads(DSIP_FIXTURE.read_text()), TODAY)}
+    af = opps["DAF26BX06-DP027"]
+    assert af.title == "DAF26BX06-DP027: Proliferated Low-Altitude Detection for C-sUAS"
+    assert af.kind == "open" and af.group == "Defense" and af.agency == "Air Force (Department of Defense)"
+    assert "On DSIP, search for DAF26BX06-DP027" in af.facts
+    assert not any(f.startswith("Submit through DSIP") for f in af.facts)
+    assert opps["DPA26BZ06-DV023"].agency == "DARPA (Department of Defense)"
+    navy = opps["DON27BX01-NP001"]
+    assert navy.kind == "forecast" and navy.kind_label == "Pre-release topic"
+    assert navy.opens == "2026-10-28" and navy.deadline == "2026-11-25"
+    assert navy.facts[0] == "Questions before it opens: peter.n.squire.civ@us.navy.mil"
+    assert navy.summary.startswith("ONR requests proposals")
+    army = opps["ARM27BX01-DP001"]
+    assert army.summary.startswith("The U.S. Army is seeking") and "Awards up to $2M" in army.funding
+
+
+def test_big_weeks_are_capped_with_overflow_counts(monkeypatch, sandbox):
+    monkeypatch.setattr(config, "MAX_NEW_ITEMS", 3)
+    monkeypatch.setattr(config, "MAX_LIST_ITEMS", 1)
+    items = json.loads(FIXTURE.read_text()) + json.loads(DSIP_FIXTURE.read_text())
+    combined = sandbox / "combined.json"
+    combined.write_text(json.dumps(items))
+    build.main(["--input", str(combined), "--date", TODAY.isoformat(), "--no-ai"])
+    md = (config.DRAFTS_DIR / TODAY.isoformat() / "issue.md").read_text(encoding="utf-8")
+    assert "Plus 8 more new opportunities with later deadlines" in md  # 11 open or notice, 3 shown
+    assert "Plus 3 more closing within 3 weeks" in md  # 4 closing (2 DoD on Oct 21, NSF, EPA), 1 shown
+    assert "## Coming soon: forecasts and pre-release topics" in md
+    assert "Opens Oct 28, closes Nov 25" in md
+    assert "Plus 5 more on the full list" in md  # 6 forecasts, 1 shown
+    assert "**This week:** 11 open" in md

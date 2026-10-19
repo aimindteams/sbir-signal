@@ -82,10 +82,13 @@ class Issue:
     new_groups: list[tuple[str, list[Opportunity]]] = field(default_factory=list)
     forecasts: list[Opportunity] = field(default_factory=list)
     still_open: int = 0
+    more_new: int = 0
+    more_closing: int = 0
+    more_forecasts: int = 0
 
     @property
     def new_count(self) -> int:
-        return sum(len(items) for _, items in self.new_groups)
+        return sum(len(items) for _, items in self.new_groups) + self.more_new
 
     @property
     def title(self) -> str:
@@ -145,12 +148,16 @@ def plan_issue(opps: list[Opportunity], state: dict, today: date) -> tuple[Issue
         open_map[opp.id] = opp
 
     horizon = today + timedelta(days=config.CLOSING_SOON_DAYS)
-    closing = sorted(
+    closing_all = sorted(
         (o for o in open_map.values() if o.kind == "open" and o.deadline_date and today <= o.deadline_date <= horizon),
         key=_deadline_key,
     )
-    new_main = [o for o in new if o.kind in ("open", "notice")][: config.MAX_NEW_ITEMS]
-    forecasts = sorted((o for o in new if o.kind == "forecast"), key=lambda o: o.posted or "", reverse=True)
+    closing = closing_all[: config.MAX_LIST_ITEMS]
+    # Soonest deadlines first, so a big release week keeps the most urgent entries in the email.
+    new_all = sorted((o for o in new if o.kind in ("open", "notice")), key=_deadline_key)
+    new_main = new_all[: config.MAX_NEW_ITEMS]
+    forecasts_all = sorted((o for o in new if o.kind == "forecast"), key=lambda o: (o.opens or "9999", o.posted or ""))
+    forecasts = forecasts_all[: config.MAX_LIST_ITEMS]
 
     groups = []
     for name in GROUP_ORDER:
@@ -158,7 +165,7 @@ def plan_issue(opps: list[Opportunity], state: dict, today: date) -> tuple[Issue
         if items:
             groups.append((name, items))
 
-    shown = {o.id for o in closing} | {o.id for o in new_main} | {o.id for o in forecasts}
+    shown = {o.id for o in closing} | {o.id for o in new_all} | {o.id for o in forecasts_all}
     still_open = sum(1 for o in open_map.values() if o.id not in shown and o.kind != "forecast")
 
     counts = (
@@ -174,6 +181,9 @@ def plan_issue(opps: list[Opportunity], state: dict, today: date) -> tuple[Issue
         new_groups=groups,
         forecasts=forecasts,
         still_open=still_open,
+        more_new=len(new_all) - len(new_main),
+        more_closing=len(closing_all) - len(closing),
+        more_forecasts=len(forecasts_all) - len(forecasts),
     )
     return issue, new_main + forecasts, open_map
 

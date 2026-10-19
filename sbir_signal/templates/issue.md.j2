@@ -14,6 +14,10 @@
 {% for opp in issue.closing_soon %}
 - **{{ opp.deadline|short_date(year) }}** · [{{ opp.title }}]({{ opp.url }}) · {{ opp.agency }}
 {% endfor %}
+{% if issue.more_closing %}
+
+Plus {{ issue.more_closing }} more closing within 3 weeks: {{ cfg.SITE_URL }}/open.html
+{% endif %}
 
 {% endif %}
 {% if issue.new_groups %}
@@ -34,15 +38,24 @@
 
 {% endfor %}
 {% endfor %}
+{% if issue.more_new %}
+Plus {{ issue.more_new }} more new {{ "opportunity" if issue.more_new == 1 else "opportunities" }} with later deadlines: {{ cfg.SITE_URL }}/open.html
+
+{% endif %}
 {% endif %}
 {% if issue.forecasts %}
-## Coming soon: forecasts
+## Coming soon: forecasts and pre-release topics
 
-These are announced but not open yet. Use the time to line up partners and a draft.
+These are announced but not open yet. During pre-release you can email a DoD topic's author directly; once it opens, questions go through DSIP's topic Q&A instead.
 
 {% for opp in issue.forecasts %}
-- **[{{ opp.title }}]({{ opp.url }})** · {{ opp.agency }}{% if opp.program or opp.phase %} · {{ [opp.program, opp.phase]|select|join(" ") }}{% endif %}. {{ opp.summary }}
+- **[{{ opp.title }}]({{ opp.url }})** · {{ opp.agency }}{% if opp.opens %} · {{ deadline_text(opp, year) }}{% endif %}. {{ opp.summary }}{% if opp.facts and opp.facts[0].startswith("Questions before it opens") %} {{ opp.facts[0] }}{% endif %}
+
 {% endfor %}
+{% if issue.more_forecasts %}
+Plus {{ issue.more_forecasts }} more on the full list: {{ cfg.SITE_URL }}/open.html
+
+{% endif %}
 
 {% endif %}
 {% if issue.still_open %}
