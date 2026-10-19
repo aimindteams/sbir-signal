@@ -108,6 +108,7 @@ def render_sitemap(issues: list[dict]) -> str:
 
 def copy_static() -> None:
     config.SITE_DIR.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(config.TEMPLATES_DIR / "style.css", config.SITE_DIR / "style.css")
+    for name in ("style.css", "logo.svg", "logo.png"):
+        shutil.copyfile(config.TEMPLATES_DIR / name, config.SITE_DIR / name)
     (config.SITE_DIR / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {config.SITE_URL}/sitemap.xml\n")
     (config.SITE_DIR / ".nojekyll").write_text("")
