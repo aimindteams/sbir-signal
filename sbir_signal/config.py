@@ -17,8 +17,9 @@ TEMPLATES_DIR = Path(__file__).resolve().parent / "templates"
 # Branding and links.
 NEWSLETTER_NAME = "SBIR Signal"
 TAGLINE = "New SBIR and STTR opportunities every week, with the fine print already read."
-SITE_URL = os.environ.get("SITE_URL", "https://aimindteams.github.io/sbir-signal").rstrip("/")
-SUBSTACK_URL = os.environ.get("SUBSTACK_URL", "https://sbirsignal.substack.com").rstrip("/")
+# "or" (not a get() default) because GitHub passes an unset repository variable as an empty string.
+SITE_URL = (os.environ.get("SITE_URL") or "https://aimindteams.github.io/sbir-signal").rstrip("/")
+SUBSTACK_URL = (os.environ.get("SUBSTACK_URL") or "https://sbirsignal.substack.com").rstrip("/")
 PUBLISHER = "AIMindTeams"
 
 # The Apify Actor that finds and reads the solicitations.
@@ -40,8 +41,8 @@ ACTOR_TIMEOUT_SECS = 900
 ACTOR_MAX_CHARGE_USD = 2.0
 
 # Gemini (free tier) writes the one-line summaries. Without a key the build still works.
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY") or ""
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL") or "gemini-flash-latest"
 
 # Issue layout.
 TIMEZONE = ZoneInfo("America/New_York")
