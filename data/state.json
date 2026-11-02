@@ -11,17 +11,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "STTR topic DAF27TZ01-DV001 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nDevelop, integrate, and demonstrate an artificial intelligence (AI)-enabled computed vision and human-machine interface capability that transforms aerial refueling operations from subjective, observation-based evaluation into an objective, data-driven performance assessment and adaptive training environment. The system shall leverage advanced computer vision, machine learning, and aviation (flight dynamics) analytics techniques to automatically extract operationally relevant performance metrics from aerial refueling events, quantify deviations from desired flight profiles, and generate actionable post-flight feedback to improve aircrew proficiency, reduce human-factor-driven mishaps, and enhance mission readiness.The capability shall analyze video from cameras mounted on the tanker (esp. the KC-46) to provide near-real-time post-flight reconstruction of aerial refueling engagements by correlating aircraft position, motion dynamics, refueling geometry, pilot inputs, and operational context to identify performance trends and training opportunities. The developed system shall perform automated assessment of complex aerial refueling behaviors including aircraft stability, closure rate management, alignment accuracy, control surface position, other situational awareness indicators, and adherence to established refueling procedures.The objective is to mature existing advanced AI-enab",
+   "description": "STTR topic DAF27TZ01-DV001 (Open); closes 2026-11-25.\n\nObjective\n\nDevelop, integrate, and demonstrate an artificial intelligence (AI)-enabled computed vision and human-machine interface capability that transforms aerial refueling operations from subjective, observation-based evaluation into an objective, data-driven performance assessment and adaptive training environment. The system shall leverage advanced computer vision, machine learning, and aviation (flight dynamics) analytics techniques to automatically extract operationally relevant performance metrics from aerial refueling events, quantify deviations from desired flight profiles, and generate actionable post-flight feedback to improve aircrew proficiency, reduce human-factor-driven mishaps, and enhance mission readiness.The capability shall analyze video from cameras mounted on the tanker (esp. the KC-46) to provide near-real-time post-flight reconstruction of aerial refueling engagements by correlating aircraft position, motion dynamics, refueling geometry, pilot inputs, and operational context to identify performance trends and training opportunities. The developed system shall perform automated assessment of complex aerial refueling behaviors including aircraft stability, closure rate management, alignment accuracy, control surface position, other situational awareness indicators, and adherence to established refueling procedures.The objective is to mature existing advanced AI-enabled aviation analytics into an ope",
    "facts": [
-    "Questions before it opens: grant.inneo.2@us.af.mil",
     "Compliance: CMMC Level 2, CUI",
     "On DSIP, search for DAF27TZ01-DV001"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:06da7833a5af4981b93c4cfe7dfc0362_86702",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW STTR 2027 BAA on DSIP (search for DAF27TZ01-DV001)",
@@ -29,13 +28,13 @@
     }
    ],
    "number": "DAF27TZ01-DV001",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "STTR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Qualifying small business and research institution teams can develop an AI-enabled computed vision and automated pilot debrief system for aerial refueling.",
+   "summary": "Small businesses partnering with research institutions can apply to develop an AI-enabled computer vision system for evaluating aerial refueling performance and automated pilot debriefs.",
    "title": "DAF27TZ01-DV001: AI-Enabled Computed Vision Air-to-Air Refueling Performance Assessment and Automated Pilot Debrief System",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -43,17 +42,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-NV002 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nHigh-energy lasers integrated onto airborne platforms hold immense potential for a variety of applications, relevant to DAF missions. However, the demanding operational environments encountered by airborne systems, characterized by factors like vibration, shock, temperature fluctuations, and pressure variations, pose significant challenges to the performance and reliability of traditional optical systems. To achieve demanding pointing and line of sight stabilization requirements necessary for the laser to have the desired effect on target, a precision optical beam control system is required to sense and correct platform induced disturbances, acquire and track targets, and sense and compensate for atmospheric and aero-optical disturbances. Historically these optical systems are implemented on flat optical benches or breadboards, in a similar manner to a ground-based laboratory. To fully realize the potential of airborne laser systems, there is a critical need for innovative optical systems designed specifically for ruggedness and environmental stability. This research effort aims to develop and demonstrate a ruggedized, environmentally stable, and optimally packaged optical beam control system specifically tailored for airborne high-energy laser applications, in a more optimized form factor for an airborne system than a conventional flat optical bench or breadboard.\n\nDescription",
+   "description": "SBIR topic DAF27BZ01-NV002 (Open); closes 2026-11-25.\n\nObjective\n\nHigh-energy lasers integrated onto airborne platforms hold immense potential for a variety of applications, relevant to DAF missions. However, the demanding operational environments encountered by airborne systems, characterized by factors like vibration, shock, temperature fluctuations, and pressure variations, pose significant challenges to the performance and reliability of traditional optical systems. To achieve demanding pointing and line of sight stabilization requirements necessary for the laser to have the desired effect on target, a precision optical beam control system is required to sense and correct platform induced disturbances, acquire and track targets, and sense and compensate for atmospheric and aero-optical disturbances. Historically these optical systems are implemented on flat optical benches or breadboards, in a similar manner to a ground-based laboratory. To fully realize the potential of airborne laser systems, there is a critical need for innovative optical systems designed specifically for ruggedness and environmental stability. This research effort aims to develop and demonstrate a ruggedized, environmentally stable, and optimally packaged optical beam control system specifically tailored for airborne high-energy laser applications, in a more optimized form factor for an airborne system than a conventional flat optical bench or breadboard.\n\nDescription\n\nThe Air Force requires light wei",
    "facts": [
-    "Questions before it opens: arthur.hassall@us.af.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DAF27BZ01-NV002"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:0ce431c452384a8cb000b6fefbc0b186_86706",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-NV002)",
@@ -61,13 +59,13 @@
     }
    ],
    "number": "DAF27BZ01-NV002",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Eligible entities can provide a precision optical beam control system for airborne high-energy lasers.",
+   "summary": "Small businesses can apply to develop a precision optical beam control system that stabilizes and corrects platform disturbances for airborne high-energy lasers.",
    "title": "DAF27BZ01-NV002: Optimally Packaged Assembly for Laser Systems (OPALS)",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -75,17 +73,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "STTR topic DAF27TZ01-DV002 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nDevelop a capability to prevent and/or mitigate cyber-attacks on fog and edge computing (FEC) devices and associated networks to provide mission assurance in highly contested environments.\n\nDescription\n\nThis topic is intended for technology proven ready to move directly into a Phase II. Therefore, a Phase I award is not required. The offeror is required to provide detailed documentation in the Direct to Phase II proposal which demonstrates accomplishment of a \"Phase I-like\" effort, including a feasibility study. This feasibility study should include an approach, architecture and previous demonstration of a limited-scope",
+   "description": "STTR topic DAF27TZ01-DV002 (Open); closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nDevelop a capability to prevent and/or mitigate cyber-attacks on fog and edge computing (FEC) devices and associated networks to provide mission assurance in highly contested environments.\n\nDescription\n\nThis topic is intended for technology proven ready to move directly into a Phase II. Therefore, a Phase I award is not required. The offeror is required to provide detailed documentation in the Direct to Phase II proposal which demonstrates accomplishment of a \"Phase I-like\" effort, including a feasibility study. This feasibility study should include an approach, architecture and previous demonstration of a limited-scope prototype with the ability to pre",
    "facts": [
-    "Questions before it opens: erik.blasch.1@us.af.mil",
     "Compliance: CMMC Level 2, ITAR, EAR",
     "On DSIP, search for DAF27TZ01-DV002"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:125b6b1f1e1c4a41a3f1456356d6af7c_86703",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW STTR 2027 BAA on DSIP (search for DAF27TZ01-DV002)",
@@ -93,13 +90,13 @@
     }
    ],
    "number": "DAF27TZ01-DV002",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "STTR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Eligible small business concerns and research institutions can develop cyber resiliency capabilities for fog and edge computing devices.",
+   "summary": "Small businesses partnering with research institutions can apply to develop capabilities to prevent and mitigate cyber attacks on fog and edge computing devices.",
    "title": "DAF27TZ01-DV002: Cyber Resiliency for Fog and Edge Computing Devices",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -107,17 +104,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-NV001 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nCreate a physics-based engineering model solution for shallow fuel jet spurts\n\nDescription\n\nThis topic seeks the development of a computationally efficient engineering-level model to predict the formation and characteristics of the \"spurt\" in fluid cavity created jets. The hydrodynamic spurt is the initial, often unsteady, ejection of material from the liner, preceding the formation of the main, stable jet. Current hydrocodes can model this phenomenon but are computationally expensive and ill-suited for rapid design iteration. This project will develop a validated, reduced-order model that accurately predicts spurt velocity, mass, and geometry as a function of liner material, geometry, and threat characteristics, enabling faster design and optimization of advanced warheads.\n\nPhase I\n\nIdentify and analyze the key physical mechanisms governing spurt formation using existing literature and high-fidelity hydrocode simulation- Identify and analyze the key physical mechanisms governing spurt formation using existing literature and high-fidelity hydrocode simulations. Develop a preliminary analytical or semi-empirical framework for the model. Demonstrate the feasibility of the proposed model to predict spurt characteristics for a baseline test case. Develop a preliminary analytical or semi-empirical framework for the model. Demonstrate the feasibility of the proposed model to predict ",
+   "description": "SBIR topic DAF27BZ01-NV001 (Open); closes 2026-11-25.\n\nObjective\n\nCreate a physics-based engineering model solution for shallow fuel jet spurts\n\nDescription\n\nThis topic seeks the development of a computationally efficient engineering-level model to predict the formation and characteristics of the \"spurt\" in fluid cavity created jets. The hydrodynamic spurt is the initial, often unsteady, ejection of material from the liner, preceding the formation of the main, stable jet. Current hydrocodes can model this phenomenon but are computationally expensive and ill-suited for rapid design iteration. This project will develop a validated, reduced-order model that accurately predicts spurt velocity, mass, and geometry as a function of liner material, geometry, and threat characteristics, enabling faster design and optimization of advanced warheads.\n\nPhase I\n\nIdentify and analyze the key physical mechanisms governing spurt formation using existing literature and high-fidelity hydrocode simulation- Identify and analyze the key physical mechanisms governing spurt formation using existing literature and high-fidelity hydrocode simulations. Develop a preliminary analytical or semi-empirical framework for the model. Demonstrate the feasibility of the proposed model to predict spurt characteristics for a baseline test case. Develop a preliminary analytical or semi-empirical framework for the model. Demonstrate the feasibility of the proposed model to predict spurt characteristics for a baseli",
    "facts": [
-    "Questions before it opens: levi.coey@us.af.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DAF27BZ01-NV001"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:1523d27ba12a44a6ba71b0b30f3fa1b4_86705",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-NV001)",
@@ -125,13 +121,13 @@
     }
    ],
    "number": "DAF27BZ01-NV001",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Applicants can create a physics-based engineering model solution for shallow fuel jet spurts.",
+   "summary": "Small businesses can apply to create a physics-based, computationally efficient engineering model that predicts the velocity, mass, and geometry of shallow fuel jet spurts.",
    "title": "DAF27BZ01-NV001: Shallow Jet Spurt Engineering Model",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -173,17 +169,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-DV007 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nDevelop a reusable illumination system for high-speed photo-optic data collection used at the Holloman High Speed Test Track (HHSTT) and other sled test tracks.\n\nDescription\n\nThe PF300 flash bulbs, that provide high-intensity illumination for high-speed video acquisition, are no longer in production. The objective is to award a contract to a small business to engineer, design, and manufacture a modern, robust, reusable replacement for the legacy PF300 flash bulb. This new system must meet or surpass the existing illumination and performance requirements of the original flash bulbs to ensure seamless integration with cur",
+   "description": "SBIR topic DAF27BZ01-DV007 (Open); closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nDevelop a reusable illumination system for high-speed photo-optic data collection used at the Holloman High Speed Test Track (HHSTT) and other sled test tracks.\n\nDescription\n\nThe PF300 flash bulbs, that provide high-intensity illumination for high-speed video acquisition, are no longer in production. The objective is to award a contract to a small business to engineer, design, and manufacture a modern, robust, reusable replacement for the legacy PF300 flash bulb. This new system must meet or surpass the existing illumination and performance requirements of the original flash bulbs to ensure seamless integration with current high-speed video systems. The",
    "facts": [
-    "Questions before it opens: philip.cooksey@us.af.mil",
     "Compliance: CMMC Level 2, ITAR, EAR",
     "On DSIP, search for DAF27BZ01-DV007"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:282b340b690345f0a07c015729da70f2_86711",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-DV007)",
@@ -191,13 +186,13 @@
     }
    ],
    "number": "DAF27BZ01-DV007",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Eligible companies can develop a reusable illumination system.",
+   "summary": "Small businesses can apply to develop a reusable illumination system for high-speed photography while complying with ITAR and EAR export control rules.",
    "title": "DAF27BZ01-DV007: Reusable Illumination System",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -205,17 +200,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-DV010 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nDevelop and demonstrate a rugged, kilowatt class 2-micron fiber amplifier module that matches size, weight, and power metrics of state-of-the-art 1-micron systems to accelerate the transition of laboratory technology to operational Department of the Air Force capabilities.\n\nDescription\n\nHigh-power fiber lasers operating in the 2-micron regime offer critical advantages for defense, medical, and industrial applications, including eye-safer directed energy, advanced sensing, and precision materials processing. While kilowatt-class, narrow-linewidth thulium-doped fiber amplifiers have been demonstrated, the Department of the Air Force aims to reduce the size and weight of existing kilowatt-class 2-micron fiber amplifiers into a highly compact system with similar size, weight, and power metrics of existing 1-micron fiber amplifiers. This topic seeks to leverage existing Air Force laboratory architectures to prime industry for production of robust 2-micron fiber amplifiers, paving the way for transition into active directed energy programs.\n\nPhase I\n\nThis topic is intended for technologies ready to move directly into a Phase II program. As this is a Direct-to-Phase-II (D2P2) topic, no Phase I awards will be made. Offerors must demonstrate completion of Phase I feasibility research and development that is not based upon or logically extend from any prior or ongoing federally funded SB",
+   "description": "SBIR topic DAF27BZ01-DV010 (Open); closes 2026-11-25.\n\nObjective\n\nDevelop and demonstrate a rugged, kilowatt class 2-micron fiber amplifier module that matches size, weight, and power metrics of state-of-the-art 1-micron systems to accelerate the transition of laboratory technology to operational Department of the Air Force capabilities.\n\nDescription\n\nHigh-power fiber lasers operating in the 2-micron regime offer critical advantages for defense, medical, and industrial applications, including eye-safer directed energy, advanced sensing, and precision materials processing. While kilowatt-class, narrow-linewidth thulium-doped fiber amplifiers have been demonstrated, the Department of the Air Force aims to reduce the size and weight of existing kilowatt-class 2-micron fiber amplifiers into a highly compact system with similar size, weight, and power metrics of existing 1-micron fiber amplifiers. This topic seeks to leverage existing Air Force laboratory architectures to prime industry for production of robust 2-micron fiber amplifiers, paving the way for transition into active directed energy programs.\n\nPhase I\n\nThis topic is intended for technologies ready to move directly into a Phase II program. As this is a Direct-to-Phase-II (D2P2) topic, no Phase I awards will be made. Offerors must demonstrate completion of Phase I feasibility research and development that is not based upon or logically extend from any prior or ongoing federally funded SBIR or STTR work. Applicant(s) shou",
    "facts": [
-    "Questions before it opens: andres.rodriguez.32@us.af.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DAF27BZ01-DV010"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:482bc48b976f40d4bf495e637f8c184b_86714",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-DV010)",
@@ -223,13 +217,13 @@
     }
    ],
    "number": "DAF27BZ01-DV010",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Small businesses can develop and demonstrate a rugged, kilowatt class two-micron fiber amplifier module matching specific size, weight, and power metrics.",
+   "summary": "Small businesses can apply to develop a compact, kilowatt class 2-micron fiber amplifier module matching the size, weight, and power metrics of existing 1-micron systems.",
    "title": "DAF27BZ01-DV010: Low SWaP, 2-micron Fiber Amplifiers",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -237,17 +231,16 @@
    "agency": "Navy (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DON27BZ01-NV002 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nDevelop a material/system to increase the fire-resistance of joiner bulkheads on ships and compartment-level fire containment while meeting Navy requirements for weight, fit, cost, fire, smoke and toxicity.\n\nDescription\n\nFire represents a grave hazard to Navy vessels. Recent fire events have propagated through joiner bulkheads and resulted in significant fire damage, which poses a substantial threat to personnel and equipment. Uncontrolled fires can propagate throughout a ship and cause extensive damage to machinery, equipment, and ship compartments; additionally, fires represent an extreme risk to ship personnel. The Navy has made numerous improvements to make ships more fire-resistant but is seeking improvement for containment of compartment-level fire events seen in recent and historical ship fires (i.e., USS OSCAR AUSTIN, USS CONYNGHAM, USS STARK, and the cruise ship Star Princess). More fire-resistant joiner bulkheads would allow damage control teams to contain and extinguish fires more easily before they could grow to threaten the ship. Innovation is needed to meet Navy goals with regard to weight, cost, fit, and performance.\n\nThe Navy seeks an improved fire-resistant joiner bulkhead that would reduce the damage ships sustain during fires, as well as improve safety for the crew.\n\nDevelopment of a fire-resistant joiner bulkhead faces several technical challenges. First, an",
+   "description": "SBIR topic DON27BZ01-NV002 (Open); closes 2026-11-25.\n\nObjective\n\nDevelop a material/system to increase the fire-resistance of joiner bulkheads on ships and compartment-level fire containment while meeting Navy requirements for weight, fit, cost, fire, smoke and toxicity.\n\nDescription\n\nFire represents a grave hazard to Navy vessels. Recent fire events have propagated through joiner bulkheads and resulted in significant fire damage, which poses a substantial threat to personnel and equipment. Uncontrolled fires can propagate throughout a ship and cause extensive damage to machinery, equipment, and ship compartments; additionally, fires represent an extreme risk to ship personnel. The Navy has made numerous improvements to make ships more fire-resistant but is seeking improvement for containment of compartment-level fire events seen in recent and historical ship fires (i.e., USS OSCAR AUSTIN, USS CONYNGHAM, USS STARK, and the cruise ship Star Princess). More fire-resistant joiner bulkheads would allow damage control teams to contain and extinguish fires more easily before they could grow to threaten the ship. Innovation is needed to meet Navy goals with regard to weight, cost, fit, and performance.\n\nThe Navy seeks an improved fire-resistant joiner bulkhead that would reduce the damage ships sustain during fires, as well as improve safety for the crew.\n\nDevelopment of a fire-resistant joiner bulkhead faces several technical challenges. First, any fire-resistant joiner bulkhead m",
    "facts": [
-    "Questions before it opens: devin.c.burke.civ@us.navy.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DON27BZ01-NV002"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:4c464a0a0f79473baf6c165678138549_86698",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DON27BZ01-NV002)",
@@ -255,13 +248,13 @@
     }
    ],
    "number": "DON27BZ01-NV002",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Small businesses can develop materials or systems to increase the fire-resistance of ship joiner bulkheads.",
+   "summary": "Small businesses can apply to develop fire-resistant joiner bulkhead materials and systems to enhance compartment-level fire containment on ships.",
    "title": "DON27BZ01-NV002: Fire Resistant Joiner Bulkhead",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -269,17 +262,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-DV013 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nDevelop and demonstrate advanced power source technologies capable of meeting weapon requirements with specific energy and power equal to or greater than current reserve battery technologies.\n\nDescription\n\nPower source performance in terms of power and energy density is the major objective with affordability, safety, and reliability secondary objectives of Air Force Armament Directorate programs for advanced reserve power sources for weapon systems. Secondary objectives are not distant relative to the major objective, but power and energy density is emphasized in order to enable new concepts and integration strategies. ",
+   "description": "SBIR topic DAF27BZ01-DV013 (Open); closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nDevelop and demonstrate advanced power source technologies capable of meeting weapon requirements with specific energy and power equal to or greater than current reserve battery technologies.\n\nDescription\n\nPower source performance in terms of power and energy density is the major objective with affordability, safety, and reliability secondary objectives of Air Force Armament Directorate programs for advanced reserve power sources for weapon systems. Secondary objectives are not distant relative to the major objective, but power and energy density is emphasized in order to enable new concepts and integration strategies. Current reserve thermally activate",
    "facts": [
-    "Questions before it opens: geremy.kleiser@us.af.mil",
     "Compliance: CMMC Level 2, ITAR, EAR",
     "On DSIP, search for DAF27BZ01-DV013"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:5218510a42f54b5d967632efe3cdcb88_86717",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-DV013)",
@@ -287,13 +279,13 @@
     }
    ],
    "number": "DAF27BZ01-DV013",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Eligible entities can develop and demonstrate advanced reserve power source technologies.",
+   "summary": "Small businesses can apply to develop and demonstrate advanced reserve power source technologies under CMMC Level 2, ITAR, and EAR compliance rules.",
    "title": "DAF27BZ01-DV013: Advanced Reserve Power Source Technologies",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -400,17 +392,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-DV009 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nThe Department of the Air Force seeks to establish the domestic production of ultra-high temperature ceramic (UHTC)-yielding preceramic polymers. UHTCs are used for demanding aerospace applications, including propulsion and aeroshell components.\n\nDescription\n\nThe scaled production of C/C-UHTCs composites (UHTCMCs) for defense applications requires the manufacturing of UHTC precursors in quantities sufficient to support acquisition programs. This SBIR will establish production of an AFRL-patented UHTC preceramic polymers so that the materials are available, at scale and affordable price point, to the high-temperature composite production community.\n\nPhase I\n\nThis topic is intended for technologies ready to move directly into a Phase II program. As this is a Direct-to-Phase-II (D2P2) topic, no Phase I awards will be made. Offerors must demonstrate completion of Phase I feasibility research and development that is not based upon or logically extend from any prior or ongoing federally funded SBIR or STTR work. Offerors must provide detailed documentation in their Direct to Phase II (D2P2) proposal that demonstrates the successful completion of a \"Phase I-like\" effort. This includes a feasibility study showing expertise in synthesizing and handling air/water-sensitive chemical compounds. Demonstrated experience in scaling chemical synthesis processes from the lab to pilot scale (e.g",
+   "description": "SBIR topic DAF27BZ01-DV009 (Open); closes 2026-11-25.\n\nObjective\n\nThe Department of the Air Force seeks to establish the domestic production of ultra-high temperature ceramic (UHTC)-yielding preceramic polymers. UHTCs are used for demanding aerospace applications, including propulsion and aeroshell components.\n\nDescription\n\nThe scaled production of C/C-UHTCs composites (UHTCMCs) for defense applications requires the manufacturing of UHTC precursors in quantities sufficient to support acquisition programs. This SBIR will establish production of an AFRL-patented UHTC preceramic polymers so that the materials are available, at scale and affordable price point, to the high-temperature composite production community.\n\nPhase I\n\nThis topic is intended for technologies ready to move directly into a Phase II program. As this is a Direct-to-Phase-II (D2P2) topic, no Phase I awards will be made. Offerors must demonstrate completion of Phase I feasibility research and development that is not based upon or logically extend from any prior or ongoing federally funded SBIR or STTR work. Offerors must provide detailed documentation in their Direct to Phase II (D2P2) proposal that demonstrates the successful completion of a \"Phase I-like\" effort. This includes a feasibility study showing expertise in synthesizing and handling air/water-sensitive chemical compounds. Demonstrated experience in scaling chemical synthesis processes from the lab to pilot scale (e.g., 5-50 kg batches) is required. T",
    "facts": [
-    "Questions before it opens: matthew.dickerson.6@us.af.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DAF27BZ01-DV009"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:90c5c198353b4047a4a166b0e2327935_86713",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-DV009)",
@@ -418,13 +409,13 @@
     }
    ],
    "number": "DAF27BZ01-DV009",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Applicants can establish domestic production of ultra-high temperature ceramic-yielding preceramic polymers for aerospace applications.",
+   "summary": "Small businesses ready for Direct to Phase II awards can apply to establish domestic production of ultra-high temperature ceramic-yielding preceramic polymers for aerospace applications.",
    "title": "DAF27BZ01-DV009: US Production of Ultra-High Temperature Ceramic-Yielding Preceramic Polymers",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -432,17 +423,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-NV006 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nAccurately measure material surface temperature at high speed (5000 Hz +) and low range (0-2000 F) in high enthalpy ground test facilities.\n\nDescription\n\nAEDC requires a method to resolve temperature and emissivity across the surface of test articles. Specifically, there is a need for a high-speed low-temperature measurement solution that overlaps with other higher-temperature capabilities. The solution threshold requirements are to measure surface temperature from 0-1500 F (2000 F objective), at 4000 Hz (5000 Hz objective), with a pixel footprint of at most 0.1 inch (0.05 inch objective) and an accuracy of +/- 10 deg F",
+   "description": "SBIR topic DAF27BZ01-NV006 (Open); closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nAccurately measure material surface temperature at high speed (5000 Hz +) and low range (0-2000 F) in high enthalpy ground test facilities.\n\nDescription\n\nAEDC requires a method to resolve temperature and emissivity across the surface of test articles. Specifically, there is a need for a high-speed low-temperature measurement solution that overlaps with other higher-temperature capabilities. The solution threshold requirements are to measure surface temperature from 0-1500 F (2000 F objective), at 4000 Hz (5000 Hz objective), with a pixel footprint of at most 0.1 inch (0.05 inch objective) and an accuracy of +/- 10 deg F (+/- 5 deg F objective).\n\nPhase I",
    "facts": [
-    "Questions before it opens: jonathan.lister.2@us.af.mil",
     "Compliance: CMMC Level 2, ITAR, EAR",
     "On DSIP, search for DAF27BZ01-NV006"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:a144308d515f491aa8dcc020898fffd3_86710",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-NV006)",
@@ -450,13 +440,13 @@
     }
    ],
    "number": "DAF27BZ01-NV006",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Small businesses can accurately measure material properties using high-speed, low-temperature hyperspectral imagers.",
+   "summary": "Small businesses can apply to develop a high-speed hyperspectral imager to measure low material surface temperatures during high enthalpy ground testing under export controls.",
    "title": "DAF27BZ01-NV006: High Speed, Low Temperature Hyperspectral Imager for High Enthalpy Ground Testing",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -464,17 +454,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-DV011 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nDevelop and demonstrate a modular, agile robotic manufacturing workcell capable of autonomously routing, aligning, inserting, and verifying flexible, non-rigid wire harnesses and electrical connectors within the highly constrained physical geometries of Unmanned Aerial Systems (UAS) and advanced munitions.\n\nAs a Direct-to-Phase-II (D2P2) topic, the immediate goal is to transition a validated proof-of-concept software and mechanical baseline (Technology Readiness Level 4) into fully integrated, operationally viable production workcells evaluated at defense prime contractor manufacturing sites. The system must eliminate the need for hard-tooled, single-product automation by delivering an agile platform that integrates deterministic planning models with real-time, adaptive online sensory feedback. This enables the robot to navigate the unpredictable, non-rigid deformation behaviors of flexible cabling, achieve sub-millimeter positioning tolerances, and safely execute intricate \"blind-mate\" connection sequences within tight bulkhead quarters without manual intervention.\n\nTo support a dynamic, high-mix/low-volume defense production environment, the workcell must be designed for rapid retaskability. Offerors must demonstrate a system architecture that allows shop-floor operators to completely retask the workcell to handle an entirely different munitions or UAS harness family within a",
+   "description": "SBIR topic DAF27BZ01-DV011 (Open); closes 2026-11-25.\n\nObjective\n\nDevelop and demonstrate a modular, agile robotic manufacturing workcell capable of autonomously routing, aligning, inserting, and verifying flexible, non-rigid wire harnesses and electrical connectors within the highly constrained physical geometries of Unmanned Aerial Systems (UAS) and advanced munitions.\n\nAs a Direct-to-Phase-II (D2P2) topic, the immediate goal is to transition a validated proof-of-concept software and mechanical baseline (Technology Readiness Level 4) into fully integrated, operationally viable production workcells evaluated at defense prime contractor manufacturing sites. The system must eliminate the need for hard-tooled, single-product automation by delivering an agile platform that integrates deterministic planning models with real-time, adaptive online sensory feedback. This enables the robot to navigate the unpredictable, non-rigid deformation behaviors of flexible cabling, achieve sub-millimeter positioning tolerances, and safely execute intricate \"blind-mate\" connection sequences within tight bulkhead quarters without manual intervention.\n\nTo support a dynamic, high-mix/low-volume defense production environment, the workcell must be designed for rapid retaskability. Offerors must demonstrate a system architecture that allows shop-floor operators to completely retask the workcell to handle an entirely different munitions or UAS harness family within a single eight-hour shift. Furtherm",
    "facts": [
-    "Questions before it opens: harry.pierson.1@us.af.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DAF27BZ01-DV011"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:a5ed4e50a9e64181b1b4dca07ba3f1e0_86715",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-DV011)",
@@ -482,13 +471,13 @@
     }
    ],
    "number": "DAF27BZ01-DV011",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Applicants can develop and demonstrate a modular, agile robotic manufacturing workcell for wire harnesses and electrical connectors within unmanned aerial systems.",
+   "summary": "Small businesses can apply to develop a modular robotic workcell capable of autonomously routing and installing flexible wire harnesses inside unmanned aerial systems and advanced munitions.",
    "title": "DAF27BZ01-DV011: Agile Wire Harness Manipulation and Installation for Unmanned Aerial Systems",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -496,17 +485,16 @@
    "agency": "Office of the Secretary of Defense (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic OSW27BZ01-DV002 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nMature commercial and dual-use technologies that detect, track, identify, or defeat small low-flying drones (Group 1 and Group 2 unmanned aerial systems) in hostile or contested areas.\n\nDescription\n\nInexpensive, highly maneuverable, commercially available unmanned aerial systems (UAS) threaten tactical forces, critical infrastructure, and installations. Current defenses are limited by cost, by the operator attention they require, and by their vulnerability to countermeasures. A capability gap against Group 1 and Group 2 UAS remains.\n\nThis topic seeks mature or maturing technology at any point in the counter-UAS kill chain. The three areas below are where capability is most needed. They are examples. A proposal may address one area, more than one, or a gap not listed here.\n\nDetection and Tracking. Detect and hold track on highly agile targets in cluttered low-altitude airspace. The proposer selects the sensing modality. Approaches that hold track when the target is not emitting are preferred. Solutions that require permanent site infrastructure or mains power, including fixed perimeter sensor installations, are out of scope for this area. The system must move with the force.\n\nIdentification and Decision Support. Classify and identify unauthorized platforms and support an engagement decision. Processing must run on tactical computing hardware carried or emplaced with the force. P",
+   "description": "SBIR topic OSW27BZ01-DV002 (Open); closes 2026-11-25.\n\nObjective\n\nMature commercial and dual-use technologies that detect, track, identify, or defeat small low-flying drones (Group 1 and Group 2 unmanned aerial systems) in hostile or contested areas.\n\nDescription\n\nInexpensive, highly maneuverable, commercially available unmanned aerial systems (UAS) threaten tactical forces, critical infrastructure, and installations. Current defenses are limited by cost, by the operator attention they require, and by their vulnerability to countermeasures. A capability gap against Group 1 and Group 2 UAS remains.\n\nThis topic seeks mature or maturing technology at any point in the counter-UAS kill chain. The three areas below are where capability is most needed. They are examples. A proposal may address one area, more than one, or a gap not listed here.\n\nDetection and Tracking. Detect and hold track on highly agile targets in cluttered low-altitude airspace. The proposer selects the sensing modality. Approaches that hold track when the target is not emitting are preferred. Solutions that require permanent site infrastructure or mains power, including fixed perimeter sensor installations, are out of scope for this area. The system must move with the force.\n\nIdentification and Decision Support. Classify and identify unauthorized platforms and support an engagement decision. Processing must run on tactical computing hardware carried or emplaced with the force. Proposals should describe a pathway",
    "facts": [
-    "Questions before it opens: lerani.v.wolk.civ@mail.mil",
     "Compliance: CMMC Level 2, ITAR",
     "On DSIP, search for OSW27BZ01-DV002"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:aa95ca4aa0f14efebd0f991a37aec1bc_86695",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for OSW27BZ01-DV002)",
@@ -514,13 +502,13 @@
     }
    ],
    "number": "OSW27BZ01-DV002",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Eligible entities can mature commercial and dual-use technologies that detect, track, identify, or defeat small low-flying drones.",
+   "summary": "Small businesses can apply to mature commercial and dual-use technologies that detect, track, identify, or defeat small low-flying unmanned aerial systems.",
    "title": "OSW27BZ01-DV002: Counter-Unmanned Aerial Systems Rapid Maturation",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -562,17 +550,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-NV004 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nCreate a system capable of launching long rod threats with controlled angle of attack\n\nDescription\n\nThe lack of a non-destructive, high-precision launching method for high length-to-diameter (L/D) projectiles fundamentally degrades the fidelity of Live Fire Test and Evaluation (LFT&E) data. For the Air Force, this deficiency directly compromises the development of penetrating munitions, degrades the survivability assessments of aerospace platforms, and introduces significant acquisition risks due to flawed test data and increased testing costs. Currently, there is not means of reliably controlling or manipulating the flight of a long rod projectile such that it consistently reaches a target location at a specific orientation. Providing means of accomplishing this feat advances DoW test capabilities for critical data underpinning analytical vulnerability assessments and engineering designs improving the survivability posture of current and next generation combat aircraft.\n\nPhase I\n\nConduct a comprehensive feasibility study evaluating alternative launching technologies (e.g., advanced light-gas, hybrid electromagnetic, pneumatic) against the requirement to launch high L/D ratio projectiles (1,400 m/s to >2,300 m/s) without structural degradation. Develop a conceptual design and utilize analytical modeling and simulation to predict internal ballistics, projectile acceleration curv",
+   "description": "SBIR topic DAF27BZ01-NV004 (Open); closes 2026-11-25.\n\nObjective\n\nCreate a system capable of launching long rod threats with controlled angle of attack\n\nDescription\n\nThe lack of a non-destructive, high-precision launching method for high length-to-diameter (L/D) projectiles fundamentally degrades the fidelity of Live Fire Test and Evaluation (LFT&E) data. For the Air Force, this deficiency directly compromises the development of penetrating munitions, degrades the survivability assessments of aerospace platforms, and introduces significant acquisition risks due to flawed test data and increased testing costs. Currently, there is not means of reliably controlling or manipulating the flight of a long rod projectile such that it consistently reaches a target location at a specific orientation. Providing means of accomplishing this feat advances DoW test capabilities for critical data underpinning analytical vulnerability assessments and engineering designs improving the survivability posture of current and next generation combat aircraft.\n\nPhase I\n\nConduct a comprehensive feasibility study evaluating alternative launching technologies (e.g., advanced light-gas, hybrid electromagnetic, pneumatic) against the requirement to launch high L/D ratio projectiles (1,400 m/s to >2,300 m/s) without structural degradation. Develop a conceptual design and utilize analytical modeling and simulation to predict internal ballistics, projectile acceleration curves, and exit velocities. Identify ",
    "facts": [
-    "Questions before it opens: levi.coey@us.af.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DAF27BZ01-NV004"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:b1e2b4466eda4c89aacec54840a5c152_86708",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-NV004)",
@@ -580,13 +567,13 @@
     }
    ],
    "number": "DAF27BZ01-NV004",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Applicants can create a system capable of launching long rod threats with a controlled angle of attack.",
+   "summary": "Small businesses can apply to create a high-precision launching system capable of delivering long rod projectiles at controlled angles of attack for live fire testing.",
    "title": "DAF27BZ01-NV004: Long Rod Delivery System",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -594,17 +581,16 @@
    "agency": "Office of the Secretary of Defense (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic OSW27BZ01-NV001 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nMature commercial and dual-use technologies that detect, track, identify, or defeat small low-flying drones (Group 1 and Group 2 unmanned aerial systems) in hostile or contested areas.\n\nDescription\n\nInexpensive, highly maneuverable, commercially available unmanned aerial systems (UAS) threaten tactical forces, critical infrastructure, and installations. Current defenses are limited by cost, by the operator attention they require, and by their vulnerability to countermeasures. A capability gap against Group 1 and Group 2 UAS remains.\n\nThis topic seeks mature or maturing technology at any point in the counter-UAS kill chain. The three areas below are where capability is most needed. They are examples. A proposal may address one area, more than one, or a gap not listed here.\n\nDetection and Tracking. Detect and hold track on highly agile targets in cluttered low-altitude airspace. The proposer selects the sensing modality. Approaches that hold track when the target is not emitting are preferred. Solutions that require permanent site infrastructure or mains power, including fixed perimeter sensor installations, are out of scope for this area. The system must move with the force.\n\nIdentification and Decision Support. Classify and identify unauthorized platforms and support an engagement decision. Processing must run on tactical computing hardware carried or emplaced with the force. P",
+   "description": "SBIR topic OSW27BZ01-NV001 (Open); closes 2026-11-25.\n\nObjective\n\nMature commercial and dual-use technologies that detect, track, identify, or defeat small low-flying drones (Group 1 and Group 2 unmanned aerial systems) in hostile or contested areas.\n\nDescription\n\nInexpensive, highly maneuverable, commercially available unmanned aerial systems (UAS) threaten tactical forces, critical infrastructure, and installations. Current defenses are limited by cost, by the operator attention they require, and by their vulnerability to countermeasures. A capability gap against Group 1 and Group 2 UAS remains.\n\nThis topic seeks mature or maturing technology at any point in the counter-UAS kill chain. The three areas below are where capability is most needed. They are examples. A proposal may address one area, more than one, or a gap not listed here.\n\nDetection and Tracking. Detect and hold track on highly agile targets in cluttered low-altitude airspace. The proposer selects the sensing modality. Approaches that hold track when the target is not emitting are preferred. Solutions that require permanent site infrastructure or mains power, including fixed perimeter sensor installations, are out of scope for this area. The system must move with the force.\n\nIdentification and Decision Support. Classify and identify unauthorized platforms and support an engagement decision. Processing must run on tactical computing hardware carried or emplaced with the force. Proposals should describe a pathway",
    "facts": [
-    "Questions before it opens: lerani.v.wolk.civ@mail.mil",
     "Compliance: CMMC Level 2, ITAR",
     "On DSIP, search for OSW27BZ01-NV001"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:b3772b842aa447d8bb885126e1b05fc5_86694",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for OSW27BZ01-NV001)",
@@ -612,13 +598,13 @@
     }
    ],
    "number": "OSW27BZ01-NV001",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Applicants can mature commercial and dual-use technologies for counter-unmanned aerial systems.",
+   "summary": "Small businesses can apply to develop Phase I concepts that mature technologies for detecting, tracking, identifying, or defeating small low-flying uncrewed aerial systems.",
    "title": "OSW27BZ01-NV001: Counter-Unmanned Aerial Systems Rapid Maturation",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -626,17 +612,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-NV005 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nDevelop and validate a non-intrusive, luminescence-based surface measurement technique for simultaneous pressure and temperature measurements within non-oxygen-based hypersonic ground test facilities.\n\nDescription\n\nWithin aerodynamic testing, pressure sensitive paint (PSP) provides crucial global surface pressure data that is utilized in calculating aerodynamic loads [1] and identifying small scale features within the flow. The working principle behind PSP involves luminophores that fluoresce at an intensity inversely proportional to the number of oxygen molecules present i.e., oxygen quenching [2].\n\nWhile these paints/luminophores have been sufficiently researched, the use-case of these paints is severely limited due to the requirement of oxygen in the flow field. Advanced hypersonic wind tunnels such as the blowdown facility at AEDC Tunnel No. 9 which utilizes nitrogen as the working fluid, are unable to utilize PSP to capture global pressure data with this method and are therefore severely limited to discrete measurement techniques. It is required that a novel technique be developed to capture simultaneous global pressure and temperature measurements in nonoxygen-based hypersonic wind tunnels.\n\nPhase I\n\nPhase I efforts outline technique/paint development and establish feasibility through thorough characterization of the paint properties/sensitivities and reduction process us",
+   "description": "SBIR topic DAF27BZ01-NV005 (Open); closes 2026-11-25.\n\nObjective\n\nDevelop and validate a non-intrusive, luminescence-based surface measurement technique for simultaneous pressure and temperature measurements within non-oxygen-based hypersonic ground test facilities.\n\nDescription\n\nWithin aerodynamic testing, pressure sensitive paint (PSP) provides crucial global surface pressure data that is utilized in calculating aerodynamic loads [1] and identifying small scale features within the flow. The working principle behind PSP involves luminophores that fluoresce at an intensity inversely proportional to the number of oxygen molecules present i.e., oxygen quenching [2].\n\nWhile these paints/luminophores have been sufficiently researched, the use-case of these paints is severely limited due to the requirement of oxygen in the flow field. Advanced hypersonic wind tunnels such as the blowdown facility at AEDC Tunnel No. 9 which utilizes nitrogen as the working fluid, are unable to utilize PSP to capture global pressure data with this method and are therefore severely limited to discrete measurement techniques. It is required that a novel technique be developed to capture simultaneous global pressure and temperature measurements in nonoxygen-based hypersonic wind tunnels.\n\nPhase I\n\nPhase I efforts outline technique/paint development and establish feasibility through thorough characterization of the paint properties/sensitivities and reduction process using benchtop testing and testing w",
    "facts": [
-    "Questions before it opens: alex.ratushny@us.af.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DAF27BZ01-NV005"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:c52964c468294f00aca3f1fd3af66597_86709",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-NV005)",
@@ -644,13 +629,13 @@
     }
    ],
    "number": "DAF27BZ01-NV005",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Eligible entities can develop and validate a non-intrusive, luminescence-based surface measurement technique for simultaneous pressure and temperature measurements in hypersonic ground test facilities.",
+   "summary": "Small businesses can apply to develop a luminescence-based surface measurement technique for simultaneous pressure and temperature testing in non-oxygen hypersonic facilities.",
    "title": "DAF27BZ01-NV005: Luminescence-Based Surface Measurement Technique for Simultaneous Pressure and Temperature Measurements within Non-Oxygen Based Hypersonic Ground Test Facilities",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -658,17 +643,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-NV003 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nThe objective of this project is to study, develop, test, and field a system that addresses a critical gap in pre-mission verification and validation of receive systems supporting flight test missions that transition between multiple, geographically diverse Test and Training Ranges. The end goal is to achieve a fully operational system that enables synchronized telemetry test signals across all participating ranges. This will allow for a comprehensive, end-to-end system checkout before a live test, significantly reducing operational and data fidelity risks, enhancing test accuracy, and strengthening mission readiness for advanced DoW test scenarios.\n\nDescription\n\nFlight test missions that traverse multiple Test Ranges (e.g. hypersonic vehicles/weapons, cruise missiles, long-range weapon systems etc.) or that require different test support infrastructures (e.g. sea range, targets, threat simulators, etc.) at remote Test Ranges, require telemetry receive stations along the flight paths to receive real-time telemetry and then relay that data via ground networks to the control room monitoring the mission. In past mission pre-flight scenarios, remote telemetry receive site to control room links were checked individually. This was accomplished with a local bore sight signal simulator that transmitted a known test pattern at the center frequency of the actual test article. The telemet",
+   "description": "SBIR topic DAF27BZ01-NV003 (Open); closes 2026-11-25.\n\nObjective\n\nThe objective of this project is to study, develop, test, and field a system that addresses a critical gap in pre-mission verification and validation of receive systems supporting flight test missions that transition between multiple, geographically diverse Test and Training Ranges. The end goal is to achieve a fully operational system that enables synchronized telemetry test signals across all participating ranges. This will allow for a comprehensive, end-to-end system checkout before a live test, significantly reducing operational and data fidelity risks, enhancing test accuracy, and strengthening mission readiness for advanced DoW test scenarios.\n\nDescription\n\nFlight test missions that traverse multiple Test Ranges (e.g. hypersonic vehicles/weapons, cruise missiles, long-range weapon systems etc.) or that require different test support infrastructures (e.g. sea range, targets, threat simulators, etc.) at remote Test Ranges, require telemetry receive stations along the flight paths to receive real-time telemetry and then relay that data via ground networks to the control room monitoring the mission. In past mission pre-flight scenarios, remote telemetry receive site to control room links were checked individually. This was accomplished with a local bore sight signal simulator that transmitted a known test pattern at the center frequency of the actual test article. The telemetry receive site would receive the ",
    "facts": [
-    "Questions before it opens: kenneth.temple.2@us.af.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DAF27BZ01-NV003"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:d5d30dffa27545e2bf5f4419ed443d74_86707",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-NV003)",
@@ -676,13 +660,13 @@
     }
    ],
    "number": "DAF27BZ01-NV003",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Small businesses can study, develop, test, and field a system for synchronized telemetry test signals across multiple test ranges.",
+   "summary": "Small businesses can apply to develop a system that synchronizes telemetry test signals across multiple test ranges for pre-mission flight test verification.",
    "title": "DAF27BZ01-NV003: Multiple Telemetry Site Signal Source Synchronization",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -690,17 +674,16 @@
    "agency": "Navy (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DON27BZ01-NV004 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nDevelop a dust-protected, water splash-resistant Input-Output Unit (IOU) capable of interfacing with legacy and modern equipment to send, receive, process, and route signals throughout the hull and superstructure of naval vessels.\n\nDescription\n\nIOUs are used on all Navy DDG 51 class ships to transfer Steering Control, Machinery Control, and Damage Control signals, as well as Interior Communication Alarm and Indication, Synchro and Digital Navigation data. They are also used on USN LHA(R) class ships, in Aegis Ashore facilities, and across a variety of Foreign Military Sales (FMS) cases. IOUs serve as a translation point when sending and receiving non-Ethernet traffic, such as synchro and low-level serial data, to Ethernet user systems.\n\nIOUs are installed in a variety of air-conditioned and non-air-conditioned spaces. Their use in engineering spaces that historically have relied on Halon 1301 (safe for sensitive electronics) for fire suppression has been complicated by the Navy\u2019s transition away from Halon and toward water mist protection systems. Additionally, existing IOUs rely on the integration of a wide variety of circuit card assemblies (CCA) to process different types of signals, creating hardware challenges for lifetime support and technology refresh.\n\nThe Navy seeks to reduce lifecycle costs with a simplified design that has fewer hardware dependencies, hardware compon",
+   "description": "SBIR topic DON27BZ01-NV004 (Open); closes 2026-11-25.\n\nObjective\n\nDevelop a dust-protected, water splash-resistant Input-Output Unit (IOU) capable of interfacing with legacy and modern equipment to send, receive, process, and route signals throughout the hull and superstructure of naval vessels.\n\nDescription\n\nIOUs are used on all Navy DDG 51 class ships to transfer Steering Control, Machinery Control, and Damage Control signals, as well as Interior Communication Alarm and Indication, Synchro and Digital Navigation data. They are also used on USN LHA(R) class ships, in Aegis Ashore facilities, and across a variety of Foreign Military Sales (FMS) cases. IOUs serve as a translation point when sending and receiving non-Ethernet traffic, such as synchro and low-level serial data, to Ethernet user systems.\n\nIOUs are installed in a variety of air-conditioned and non-air-conditioned spaces. Their use in engineering spaces that historically have relied on Halon 1301 (safe for sensitive electronics) for fire suppression has been complicated by the Navy\u2019s transition away from Halon and toward water mist protection systems. Additionally, existing IOUs rely on the integration of a wide variety of circuit card assemblies (CCA) to process different types of signals, creating hardware challenges for lifetime support and technology refresh.\n\nThe Navy seeks to reduce lifecycle costs with a simplified design that has fewer hardware dependencies, hardware component updates, and more open and mod",
    "facts": [
-    "Questions before it opens: christopher.l.strater.civ@us.navy.mil",
     "Compliance: CMMC Level 2, ITAR",
     "On DSIP, search for DON27BZ01-NV004"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:e27d9c945ea14f45ae0329f6a1554259_86700",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DON27BZ01-NV004)",
@@ -708,13 +691,13 @@
     }
    ],
    "number": "DON27BZ01-NV004",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Small businesses can develop a dust-protected, water splash-resistant input-output unit for naval vessels.",
+   "summary": "Small businesses can apply to develop a dust- and water-resistant input-output unit that routes hull, mechanical, electrical, and navigation signals across ship compartments.",
    "title": "DON27BZ01-NV004: Input-Output Unit (IOU) for Secure Processing and Routing of Hull, Mechanical, & Electrical (HM&E) and Navigation Signals",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -756,17 +739,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-DV008 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nThe objective of this Directed to Phase II (D2P2) SBIR effort is to develop an innovative, secure, and scalable solution for modernizing Technical Data Packages (TDPs) associated with complex Air and Space Force platforms. This initiative seeks to address challenges in managing large, diverse datasets by enhancing configuration control, ensuring data integrity, and strengthening Information Assurance (IA) in support of mission-critical operations. Specifically, the focus of this phase is to demonstrate the feasibility of advanced technologies that enable secure data lifecycle management and seamless data exchange within",
+   "description": "SBIR topic DAF27BZ01-DV008 (Open); closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nThe objective of this Directed to Phase II (D2P2) SBIR effort is to develop an innovative, secure, and scalable solution for modernizing Technical Data Packages (TDPs) associated with complex Air and Space Force platforms. This initiative seeks to address challenges in managing large, diverse datasets by enhancing configuration control, ensuring data integrity, and strengthening Information Assurance (IA) in support of mission-critical operations. Specifically, the focus of this phase is to demonstrate the feasibility of advanced technologies that enable secure data lifecycle management and seamless data exchange within operational environments. Propose",
    "facts": [
-    "Questions before it opens: orfely.auguste@us.af.mil",
     "Compliance: CMMC Level 2, ITAR, EAR, Zero Trust",
     "On DSIP, search for DAF27BZ01-DV008"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:ef3f40d47f304eed81a2c2fba6610ccd_86712",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-DV008)",
@@ -774,13 +756,13 @@
     }
    ],
    "number": "DAF27BZ01-DV008",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Small businesses can modernize technical data packages for information assurance and secure data exchange.",
+   "summary": "Small businesses can apply to modernize technical data packages to support information assurance and secure data exchange while meeting export control requirements.",
    "title": "DAF27BZ01-DV008: Technical Data Package Modernization for Information Assurance and Secure Data Exchange",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -788,17 +770,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "STTR topic DAF27TZ01-DV003 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nThe Department of the Air Force seeks mature, innovative solutions ready for prototype development and demonstration in cooperative perception for uncrewed or autonomous air systems. The objective of this topic is to develop and demonstrate a scalable prototype that enables distributed sensing nodes to share, prioritize, and fuse mission-relevant information in near real time to improve object detection, tracking, navigation, and operator situational awareness in cluttered and bandwidth-constrained environments.\n\nSolutions should support efficient information exchange, adaptive transmission under changing network conditions, and a credible data fusion design that converts distributed sensor observations into actionable fused products. Offerors should propose technologies with demonstrated Phase I-type maturity and a clear path to prototype integration, testing, and transition.\n\nDescription\n\nDistributed air operations increasingly depend on timely awareness of objects, hazards, and activities beyond the field of view of any individual platform. Cooperative perception offers a path to extend sensing coverage and reduce blind spots by allowing multiple platforms and supporting nodes to share sensor-derived information. Yet this benefit is limited by the large size of modern sensor data, the variability of wireless links, the need for rapid decision making, and the difficulty of co",
+   "description": "STTR topic DAF27TZ01-DV003 (Open); closes 2026-11-25.\n\nObjective\n\nThe Department of the Air Force seeks mature, innovative solutions ready for prototype development and demonstration in cooperative perception for uncrewed or autonomous air systems. The objective of this topic is to develop and demonstrate a scalable prototype that enables distributed sensing nodes to share, prioritize, and fuse mission-relevant information in near real time to improve object detection, tracking, navigation, and operator situational awareness in cluttered and bandwidth-constrained environments.\n\nSolutions should support efficient information exchange, adaptive transmission under changing network conditions, and a credible data fusion design that converts distributed sensor observations into actionable fused products. Offerors should propose technologies with demonstrated Phase I-type maturity and a clear path to prototype integration, testing, and transition.\n\nDescription\n\nDistributed air operations increasingly depend on timely awareness of objects, hazards, and activities beyond the field of view of any individual platform. Cooperative perception offers a path to extend sensing coverage and reduce blind spots by allowing multiple platforms and supporting nodes to share sensor-derived information. Yet this benefit is limited by the large size of modern sensor data, the variability of wireless links, the need for rapid decision making, and the difficulty of combining observations from differen",
    "facts": [
-    "Questions before it opens: erik.blasch.1@us.af.mil",
     "Compliance: CMMC Level 2, ITAR",
     "On DSIP, search for DAF27TZ01-DV003"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:f1980e7eaafe42958f24c959af11182d_86704",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW STTR 2027 BAA on DSIP (search for DAF27TZ01-DV003)",
@@ -806,13 +787,13 @@
     }
    ],
    "number": "DAF27TZ01-DV003",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "STTR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Small businesses and research partners can develop scalable prototypes for cooperative perception in uncrewed air systems.",
+   "summary": "Small businesses partnering with research institutions can apply to develop a scalable prototype that fuses cooperative sensor data across uncrewed air systems in real time.",
    "title": "DAF27TZ01-DV003: Fusion of Cooperative Information Sharing for Uncrewed Air Systems (FOCISAUS)",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -820,17 +801,16 @@
    "agency": "Navy (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DON27BZ01-NV001 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nDevelop a technology to clean and potentially reverse fouling on Time Domain Reflectometer (TDR) Tank Level Indicating (TLI) components in-place. The solution must function within fully compensated fuel tanks aboard DDG 51 class ships without requiring depressurization, defueling, or dewatering.\n\nDescription\n\nFouling on the TDR sensor used for TLI is a persistent problem. The TDR is necessary to provide accurate and precise readings for fuel measurement. Over time, TDRs can experience sensor fouling through a buildup of crystallization and other contaminants on TDR rods and tubes, contributing to false readings or other failures if not properly maintained and cleaned.\n\nThe operational readiness of the U.S. Navy's DDG 51 Arleigh Burke-class destroyers is being undermined by a persistent and unsolved equipment failure. The TDR sensors, a TLI technique, which are critical for managing fuel, buoyancy, and stability, are consistently rendered unreliable due to fouling. Current cleaning methods are operationally untenable; they require taking fuel compensating tanks offline, emptying fuel and/or compensating seawater, and significant follow-on maintenance, which directly reduces the Fleet's readiness and deployability. These efforts are not a permanent solution and often fail to resolve the underlying issue, making this a high-priority challenge for the DDG 51 Program Office.\n\nThe Na",
+   "description": "SBIR topic DON27BZ01-NV001 (Open); closes 2026-11-25.\n\nObjective\n\nDevelop a technology to clean and potentially reverse fouling on Time Domain Reflectometer (TDR) Tank Level Indicating (TLI) components in-place. The solution must function within fully compensated fuel tanks aboard DDG 51 class ships without requiring depressurization, defueling, or dewatering.\n\nDescription\n\nFouling on the TDR sensor used for TLI is a persistent problem. The TDR is necessary to provide accurate and precise readings for fuel measurement. Over time, TDRs can experience sensor fouling through a buildup of crystallization and other contaminants on TDR rods and tubes, contributing to false readings or other failures if not properly maintained and cleaned.\n\nThe operational readiness of the U.S. Navy's DDG 51 Arleigh Burke-class destroyers is being undermined by a persistent and unsolved equipment failure. The TDR sensors, a TLI technique, which are critical for managing fuel, buoyancy, and stability, are consistently rendered unreliable due to fouling. Current cleaning methods are operationally untenable; they require taking fuel compensating tanks offline, emptying fuel and/or compensating seawater, and significant follow-on maintenance, which directly reduces the Fleet's readiness and deployability. These efforts are not a permanent solution and often fail to resolve the underlying issue, making this a high-priority challenge for the DDG 51 Program Office.\n\nThe Navy urgently seeks an innovative so",
    "facts": [
-    "Questions before it opens: devin.c.burke.civ@us.navy.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DON27BZ01-NV001"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:f199089b4c064f9b9ec58fdbc9738c78_86697",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DON27BZ01-NV001)",
@@ -838,13 +818,13 @@
     }
    ],
    "number": "DON27BZ01-NV001",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Eligible companies can develop technology to clean and reverse fouling on tank level indicator components in-place on ships.",
+   "summary": "Small businesses can apply to develop an in-place cleaning technology for Time Domain Reflectometer tank level indicator sensors aboard destroyers.",
    "title": "DON27BZ01-NV001: Cleaner for the Time Domain Reflectometer Tank Level Indicator",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -852,17 +832,16 @@
    "agency": "Air Force (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DAF27BZ01-DV012 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nDevelop and demonstrate an automated, end-to-end software platform capable of ingesting heterogeneous Technical Data Packages (TDPs), including 3D CAD models, 2D engineering drawings, Bills of Materials (BOMs), and textual specifications, to autonomously extract engineering intent and generate optimized, collision-free robotic inspection trajectories without manual waypoint programming or hard-coded scripting.The resulting system must bridge the gap between enterprise digital design data and physical automation by converting complex tolerances, geometric constraints, and manufacturing annotations into a standardized dat",
+   "description": "SBIR topic DAF27BZ01-DV012 (Open); closes 2026-11-25.\n\nObjective\n\nThe technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the technical data under US Export Control Laws.\n\nDevelop and demonstrate an automated, end-to-end software platform capable of ingesting heterogeneous Technical Data Packages (TDPs), including 3D CAD models, 2D engineering drawings, Bills of Materials (BOMs), and textual specifications, to autonomously extract engineering intent and generate optimized, collision-free robotic inspection trajectories without manual waypoint programming or hard-coded scripting.The resulting system must bridge the gap between enterprise digital design data and physical automation by converting complex tolerances, geometric constraints, and manufacturing annotations into a standardized data model, simulating the execution ",
    "facts": [
-    "Questions before it opens: harry.pierson.1@us.af.mil",
     "Compliance: CMMC Level 2, ITAR, EAR",
     "On DSIP, search for DAF27BZ01-DV012"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:f2918c80b5ba491a84fdf1125fd27d44_86716",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 BAA on DSIP (search for DAF27BZ01-DV012)",
@@ -870,13 +849,13 @@
     }
    ],
    "number": "DAF27BZ01-DV012",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Small businesses can develop and demonstrate an agile autonomous technical data package to path robotic task specification.",
+   "summary": "Small businesses can apply to develop an automated software platform that converts technical data packages into robotic task specifications while complying with ITAR and EAR requirements.",
    "title": "DAF27BZ01-DV012: Agile Autonomous Technical Data Package to Path Robotic Task Specification",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -884,17 +863,16 @@
    "agency": "Navy (Department of Defense)",
    "deadline": "2026-11-25",
    "deep_parsed": false,
-   "description": "SBIR topic DON27BX01-NP001 (Pre-Release); proposals open 2026-10-28; closes 2026-11-25.\n\nObjective\n\nDevelop a commercial technology to address Navy and USMC gaps regarding low-cost, NDAA-compliant heads-up displays (HUDs) with on-board 6 degrees-of-freedom (6DOF) tracking.\n\nDescription\n\nONR requests proposals for existing technology demonstration platforms, prototypes, and commercial products that provide domestically-sourced, low-cost HUDs) for first-person view (FPV) drone pilots, and augmented reality (AR) capabilities for Forward Observers (FOs) and Joint Terminal Air Controllers (JTACs). For Phase I awardees, ONR will provide operational context and technical thresholds against which technologies will be assessed and provide feedback and guidance on enhancements to align with warfighting objectives.\n\nThe proposing small business should have an existing hardware solution that meets one or both technical areas listed below:\n\n- HUD for FPV pilot operations including integrated display, signal inputs, and locations for mounting organic FPV equipment including antennas, transmitters, and power supplies\n\n- Integrated HUD with native 6DOF tracking, using on-board sensors and modalities (cameras, Inertial Measurement or Measuring Units [IMUs], magnetometers), compute, and power (battery)\n\nPhase I\n\nThe DON is planning to issue multiple Phase I awards for this topic but reserves the right to issue no awards. Each Phase I proposal must include a Base and Option period of performanc",
+   "description": "SBIR topic DON27BX01-NP001 (Open); closes 2026-11-25.\n\nObjective\n\nDevelop a commercial technology to address Navy and USMC gaps regarding low-cost, NDAA-compliant heads-up displays (HUDs) with on-board 6 degrees-of-freedom (6DOF) tracking.\n\nDescription\n\nONR requests proposals for existing technology demonstration platforms, prototypes, and commercial products that provide domestically-sourced, low-cost HUDs) for first-person view (FPV) drone pilots, and augmented reality (AR) capabilities for Forward Observers (FOs) and Joint Terminal Air Controllers (JTACs). For Phase I awardees, ONR will provide operational context and technical thresholds against which technologies will be assessed and provide feedback and guidance on enhancements to align with warfighting objectives.\n\nThe proposing small business should have an existing hardware solution that meets one or both technical areas listed below:\n\n- HUD for FPV pilot operations including integrated display, signal inputs, and locations for mounting organic FPV equipment including antennas, transmitters, and power supplies\n\n- Integrated HUD with native 6DOF tracking, using on-board sensors and modalities (cameras, Inertial Measurement or Measuring Units [IMUs], magnetometers), compute, and power (battery)\n\nPhase I\n\nThe DON is planning to issue multiple Phase I awards for this topic but reserves the right to issue no awards. Each Phase I proposal must include a Base and Option period of performance. The Phase I Base must have a pe",
    "facts": [
-    "Questions before it opens: peter.n.squire.civ@us.navy.mil",
     "Compliance: CMMC Level 2",
     "On DSIP, search for DON27BX01-NP001"
    ],
    "funding": [],
    "group": "Defense",
    "id": "dsip:ff43efa8959e45dd9b334707de8de6f9_86696",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2027 CSO on DSIP (search for DON27BX01-NP001)",
@@ -902,13 +880,13 @@
     }
    ],
    "number": "DON27BX01-NP001",
-   "opens": "2026-10-28",
+   "opens": null,
    "phase": "Phase I, Phase II, Sequential Phase II",
    "posted": "2026-10-07",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Applicants can develop commercial technology addressing Navy and Marine Corps gaps regarding low-cost, NDAA-compliant heads-up displays.",
+   "summary": "Small businesses with existing hardware solutions can apply to build low-cost heads-up displays featuring six degrees-of-freedom tracking for virtual and augmented reality.",
    "title": "DON27BX01-NP001: ONR Open Topic for Low-Cost Heads Up Displays (HUDs) for Virtual & Augmented Reality (VR/AR)",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
