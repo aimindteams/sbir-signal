@@ -272,7 +272,7 @@
    "deep_parsed": false,
    "description": "SBIR topic DON27BZ02-NV019 (Pre-Release); proposals open 2026-12-02; closes 2027-01-06.\n\nObjective\n\nDevelop and demonstrate a scaled high density Rotating Detonation Combustor (RDC) that uses NATO F76 diesel fuel (MIL-DTL-16884R) and perform thermodynamic analysis on developed Navy RDC equipped shipboard gas turbine concepts to determine related performance benefits including reduction of stack up length, efficiency improvements, design limitations, and development gaps.\n\nDescription\n\nAs background, the typical arrangement used on U.S. Navy surface combatants consists of four (4) large (20+MW class - GE LM-2500) gas turbines for propulsion and three 3 smaller (3 MW class - Rolls Royce 501-K34) gas turbines for ship service electrical power generation.\n\nPresently U.S. gas turbine powered warships use simple cycle machines. However, complex cycles with reheat and other cycle enhancements have been considered and analyzed with the potential for increased efficiency. Further examinations have been performed to evaluate improvements in maintainability/reliability, overall generator set power density/stack up length, and alternative configuration installation flexibility for use in overall electric plant designs.\n\nRDCs are advanced power-generation and propulsion devices that operate by propagating one or more supersonic detonation waves continuously around an annular chamber. As fresh fuel and oxidizer are continuously injected into the channel, the rotating shock wave rapidly com",
    "facts": [
-    "Questions before it opens: scott.r.higgins2.civ@us.navy.mil",
+    "Questions before it opens: jacob.d.guthrie.civ@us.navy.mil",
     "Compliance: CMMC Level 2, ITAR",
     "On DSIP, search for DON27BZ02-NV019"
    ],
@@ -1647,9 +1647,8 @@
    "agency": "Army (Department of Defense)",
    "deadline": "2026-11-30",
    "deep_parsed": false,
-   "description": "SBIR topic ARM26BX04-DV010 (Pre-Release); proposals open 2026-11-16; closes 2026-11-30.\n\nObjective\n\nThe United States currently faces an \"unprecedented\" military buildup by China and increasing air and missile threats that demand a robust deterrent. However, the current inventory of long-range strike weapons is dominated by high-cost, low-volume systems or aging strategic assets like the Minuteman III, which dates back to the 1960s. The lack of a cost-effective, ground-launched payload delivery system prevents the Joint Force from achieving producibility at scale, leaving the U.S. vulnerable in high-intensity, multi-domain environments where high-end munitions would be rapidly depleted. The objective of this topic is to facilitate innovative research on low-cost, rapidly manufacturable, payload delivery systems.\n\nDescription\n\nThe Department of War (DoW) is pivotally shifting toward \"affordable mass\" to counter peer adversaries who are rapidly expanding their military capabilities. While hypersonic systems offer high speeds, their exorbitant costs, exceeding $50 million per round, limit the military's ability to achieve the \"magazine depth\" necessary for prolonged conflict. This project proposes a ground-based, non-hypersonic, long-range precision payload delivery system that leverages low-cost production methods and commercial technologies to provide a scalable, high-volume alternative that is a tenth of the price of current high-end munitions. NOTE: The following topic numbe",
+   "description": "SBIR topic ARM26BX04-DV010 (Open); closes 2026-11-30.\n\nObjective\n\nThe United States currently faces an \"unprecedented\" military buildup by China and increasing air and missile threats that demand a robust deterrent. However, the current inventory of long-range strike weapons is dominated by high-cost, low-volume systems or aging strategic assets like the Minuteman III, which dates back to the 1960s. The lack of a cost-effective, ground-launched payload delivery system prevents the Joint Force from achieving producibility at scale, leaving the U.S. vulnerable in high-intensity, multi-domain environments where high-end munitions would be rapidly depleted. The objective of this topic is to facilitate innovative research on low-cost, rapidly manufacturable, payload delivery systems.\n\nDescription\n\nThe Department of War (DoW) is pivotally shifting toward \"affordable mass\" to counter peer adversaries who are rapidly expanding their military capabilities. While hypersonic systems offer high speeds, their exorbitant costs, exceeding $50 million per round, limit the military's ability to achieve the \"magazine depth\" necessary for prolonged conflict. This project proposes a ground-based, non-hypersonic, long-range precision payload delivery system that leverages low-cost production methods and commercial technologies to provide a scalable, high-volume alternative that is a tenth of the price of current high-end munitions. NOTE: The following topic number, ARM26BX04-DV011 - Ground-Based ",
    "facts": [
-    "Questions before it opens: george.l.whitefield.mil@army.mil",
     "Compliance: CMMC Level 1",
     "On DSIP, search for ARM26BX04-DV010"
    ],
@@ -1658,8 +1657,8 @@
    ],
    "group": "Defense",
    "id": "dsip:674ecf832cad476f992da001607a550c_86587",
-   "kind": "forecast",
-   "kind_label": "Pre-release topic",
+   "kind": "open",
+   "kind_label": "Open topic",
    "links": [
     {
      "title": "DoW SBIR 2026 CSO on DSIP (search for ARM26BX04-DV010)",
@@ -1667,13 +1666,13 @@
     }
    ],
    "number": "ARM26BX04-DV010",
-   "opens": "2026-11-16",
+   "opens": null,
    "phase": "Direct to Phase II, Phase II, Sequential Phase II",
    "posted": "2026-07-01",
    "program": "SBIR",
    "source": "dsip",
    "source_label": "DSIP",
-   "summary": "Eligible small businesses can facilitate innovative research on low-cost, rapidly manufacturable ground-launched payload delivery systems.",
+   "summary": "Small businesses can apply to research low-cost, rapidly manufacturable payload delivery systems.",
    "title": "ARM26BX04-DV010: Ground-Based Affordable Mass (G-BAM)",
    "url": "https://www.dodsbirsttr.mil/topics-app/"
   },
@@ -3852,6 +3851,66 @@
    "title": "Unlocking New Levels of Output and Capacity for Key Subsurface Resources SBIR/STTR (UNLOCK SBIR/STTR)",
    "url": "https://www.grants.gov/search-results-detail/364135"
   },
+  "grants.gov:364255": {
+   "agency": "National Science Foundation",
+   "deadline": "2027-03-04",
+   "deep_parsed": false,
+   "description": "NSF invests in scientific discoveries, technological breakthroughs, and transformative innovations that strengthen economic growth, enhance security, and improve the lives of Americans and people around the world.\n\nIn support of this mission, NSF is relaunching its SBIR/STTR programs (also known as America\u2019s Seed Fund powered by NSF) following enactment of the Small Business Innovation and Economic Security Act to invest in startups and small businesses transforming high-risk technologies into products and services with commercial impacts. By investing federal R&D funds in start-ups and small businesses, NSF strengthens the national economy by stimulating private sector innovation, commercializing federally-funded research outputs, and supporting the American scientific enterprise. This investment enhances job creation while developing and expanding the U.S. workforce.\n\nThe NSF SBIR/STTR programs fund across nearly all technology areas and market sectors; the programs do not solicit specific technologies or procure goods and services from startups and small businesses. Each company can receive up to $2 million for R&D. NSF takes no equity and awardees keep full ownership of their company and intellectual property.\n\nFunding opportunities are available through the NSF SBIR/STTR programs: Phase I, Phase II, Fast-Track, and Supplements. Separately, NSF welcomes Strategic Breakthrough proposals, upon recommendation from the cognizant Program Officer, for Phase II awardees.\n\nIn add",
+   "facts": [
+    "Who can apply: *Who May Serve as PI: Who May Serve as PI: The primary employment of the Principal Investigator (PI) must be with the small business at the time of award and for the\u2026"
+   ],
+   "funding": [
+    "About $210M in total"
+   ],
+   "group": "Science and space",
+   "id": "grants.gov:364255",
+   "kind": "open",
+   "kind_label": "Open solicitation",
+   "links": [
+    {
+     "title": "NSF Publication 26-510",
+     "url": "http://www.nsf.gov/publications/pub_summ.jsp?ods_key=nsf26510"
+    }
+   ],
+   "number": "26-510",
+   "opens": null,
+   "phase": "Phase I",
+   "posted": "2026-11-12",
+   "program": "SBIR/STTR",
+   "source": "grants.gov",
+   "source_label": "Grants.gov",
+   "summary": "Startups and small businesses with a primary-employed principal investigator can apply to develop high-risk deep technologies with commercial potential.",
+   "title": "Small Business Innovation Research / Small Business Technology Transfer Phase I, Phase II, Fast-Track Programs: Developing Deep Technologies that Advance U.S. Competitiveness and Security",
+   "url": "https://www.grants.gov/search-results-detail/364255"
+  },
+  "sam.gov:2bb008d110fd413290d3498b75d41f36": {
+   "agency": "Office of Procurement Operations (Department of Homeland Security)",
+   "deadline": "2026-12-07",
+   "deep_parsed": true,
+   "description": "THIS IS A PRE-SOLICITATION - DHS IS NOT SEEKING PROPOSALS AT THIS TIME\n\nThe Department of Homeland Security (DHS) Small Business Innovation Research (SBIR) Program invites small business concerns (SBCs) to review this Pre-Solicitation for awareness of the upcoming 27.1 DHS SBIR Solicitation.\n\nPlease read the attached Pre-Solicitation carefully. This Pre-Solicitation is being provided for planning purposes, to allow SBCs to become familiar with the requirements for the upcoming 27.1 Solicitation. Failure to comply with the requirements in the 27.1 Solicitation will likely result negatively in the proposal evaluation or elimination from consideration for award. The final 27.1 Solicitation may differ from the Pre-Solicitation.\n\nThis Pre-Solicitation contains topics for the DHS SBIR Program. Unsolicited proposals will not be accepted.\n\nPrior to proposal submission, Offerors must register with SAM.gov and the Small Business Administration (SBA) Company Registration Database.\n\nNote - Completion of SAM.gov registration can be a lengthy process (up to several weeks). It is recommended to initiate this as soon as possible.\n\nOfferors that are majority\u2010owned by multiple venture capital operating companies, hedge funds or private equity firms are NOT ELIGIBLE to submit proposals in response to the 27.1 Solicitation.\n\nPer the SBA SBIR Policy Directive, dated May 3, 2023, to be eligible for a Phase I award, Offerors must meet or exceed the Phase II Transition Rate Benchmark.\n\nSEE ATTACHED ",
+   "facts": [
+    "Page limits: 15 pages (technical proposal), 35 pages (technical proposal), 1 page (commercialization plan)",
+    "Submit through Email",
+    "Compliance: ITAR, EAR",
+    "Read 1 attached document (49 pages)"
+   ],
+   "funding": [],
+   "group": "Homeland security and transportation",
+   "id": "sam.gov:2bb008d110fd413290d3498b75d41f36",
+   "kind": "notice",
+   "kind_label": "Presolicitation",
+   "links": [],
+   "number": "DHSSBIRFY27PRE",
+   "opens": null,
+   "phase": null,
+   "posted": "2026-11-13",
+   "program": null,
+   "source": "sam.gov",
+   "source_label": "SAM.gov",
+   "summary": "Small business concerns can review upcoming program topics to prepare proposals for research and development projects.",
+   "title": "DHS SMALL BUSINESS INNOVATION RESEARCH (SBIR) PROGRAM FY27 PRE-SOLICITATION",
+   "url": "https://sam.gov/opp/2bb008d110fd413290d3498b75d41f36/view"
+  },
   "sam.gov:2c9536a8ae43424b8054966d528211c4": {
    "agency": "Air Force (Department of Defense)",
    "deadline": "2027-11-09",
@@ -3955,6 +4014,32 @@
    "summary": "This announcement serves as an umbrella for each of the annual DoW SBIR/STTR program solicitations.",
    "title": "Department of War (DoW) Small Business Innovative Research (SBIR) | Small Business Technology Transfer (STTR) Program Solicitations for FY2027",
    "url": "https://sam.gov/opp/87d44d4915154e8293f10bc9bf53fbed/view"
+  },
+  "sam.gov:b6984749216c48bfb092426c14676680": {
+   "agency": "Veterans Affairs, Department Of",
+   "deadline": "2026-11-16",
+   "deep_parsed": true,
+   "description": "Based on the market research and In accordance with 115 U.S.C. 638(r)(1) states: In the case of a small business concern that is awarded a funding agreement for Phase II of an SBIR or STTR program, a Federal agency may enter into a Phase III agreement with that business concern for additional work to be performed during or after the Phase II period. Furthermore, 15 U.S.C. 638(r)(4) states: To the greatest extent practicable, Federal agencies and Federal prime Contractors shall issue, without further justification, Phase III awards relating to technology, including sole source awards, to the SBIR and STTR award recipients that developed the technology.\nThe Department of Veterans Affairs (VA), Technology Acquisition Center, proposes to enter into a sole source Small Business Innovation Research (SBIR) Phase III Contract on a Firm Fixed Price basis with LMI CONSULTING, LLC, 7940 Jones Branch DR, Tysons Corner VA 22102 to provide operational advisory and implementation support for Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program (SSG Fox SPGP), including program assessment, human-centered discovery, implementation-maturity analysis, evaluability support, grantee capacity-building and technical-assistance strategy, program-management support, process and data/tool improvement, and portfolio-level decision support. The Contractor shall apply Magnify and the underlying HPA framework developed under SBIR N092-150 throughout performance in support of VA Veterans Healt",
+   "facts": [
+    "Compliance: FIPS 140, Section 508",
+    "Read 2 attached documents (20 pages)"
+   ],
+   "funding": [],
+   "group": "Other agencies",
+   "id": "sam.gov:b6984749216c48bfb092426c14676680",
+   "kind": "notice",
+   "kind_label": "Special notice",
+   "links": [],
+   "number": "36C10B27Q0113",
+   "opens": null,
+   "phase": null,
+   "posted": "2026-11-09",
+   "program": null,
+   "source": "sam.gov",
+   "source_label": "SAM.gov",
+   "summary": "This sole source Phase III contract funds operational advisory and implementation support, open to LMI Consulting, LLC.",
+   "title": "DA01--SBIR - Operational Advisory and Implementation Support (VA-27-00020617)",
+   "url": "https://sam.gov/opp/b6984749216c48bfb092426c14676680/view"
   },
   "sam.gov:f5d6991dd19d4c6abda74f054c4ab9fd": {
    "agency": "Army (Department of Defense)",
@@ -4110,10 +4195,13 @@
   "grants.gov:363967": "2026-10-19",
   "grants.gov:364020": "2026-10-19",
   "grants.gov:364135": "2026-10-26",
+  "grants.gov:364255": "2026-11-16",
+  "sam.gov:2bb008d110fd413290d3498b75d41f36": "2026-11-16",
   "sam.gov:2c9536a8ae43424b8054966d528211c4": "2026-11-09",
   "sam.gov:6785c01dbc8f49e6acf889415bf6e062": "2026-10-19",
   "sam.gov:82c25ab2750f410cb73817384e8d9fb3": "2026-10-19",
   "sam.gov:87d44d4915154e8293f10bc9bf53fbed": "2026-10-19",
+  "sam.gov:b6984749216c48bfb092426c14676680": "2026-11-16",
   "sam.gov:f5d6991dd19d4c6abda74f054c4ab9fd": "2026-11-09"
  }
 }
